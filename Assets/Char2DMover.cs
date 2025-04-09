@@ -5,7 +5,7 @@ public class Char2DMover : MonoBehaviour
     public float MovementSpeed = 1;
     public float JumpForce = 1;
     private Rigidbody2D _rigidbody;
-    public ProjectileBehavior ProjectilePrefab;
+    public GameObject ProjectilePrefab;
     public Transform LaunchOffset;
     private void Start()
     {
