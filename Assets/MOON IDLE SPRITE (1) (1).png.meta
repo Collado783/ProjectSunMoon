@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1e0daea934de1c84d9c3085a2596d03d
+guid: 457e938d75fcd9b49b026d2e8c2469ab
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2978287457126693226
-    second: MOON IDLE SPRITE (1)_0
+      213: -8385220213624321648
+    second: MOON IDLE SPRITE (1) (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MOON IDLE SPRITE (1)_0
+      name: MOON IDLE SPRITE (1) (1)_0
       rect:
         serializedVersion: 2
         x: 575
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a69b901a9a0055920800000000000000
-      internalID: 2978287457126693226
+      spriteID: 0994f7b74a6b1ab80800000000000000
+      internalID: -8385220213624321648
       vertices: []
       indices: 
       edges: []
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MOON IDLE SPRITE (1) (1)_0: -8385220213624321648
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
