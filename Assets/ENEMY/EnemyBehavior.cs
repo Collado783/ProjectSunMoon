@@ -6,6 +6,7 @@ public class Enemybehavior : MonoBehaviour
 {
     public float Hitpoints;
     public float MaxHitpoints = 3;
+    public GameObject explosion;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class Enemybehavior : MonoBehaviour
         if (Hitpoints <= 0)
         {
             Destroy(gameObject);
+            Instantiate(explosion);
+            
         }
     }
 }

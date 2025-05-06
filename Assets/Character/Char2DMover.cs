@@ -7,6 +7,7 @@ public class Char2DMover : MonoBehaviour
     private Rigidbody2D _rigidbody;
     public GameObject ProjectilePrefab;
     public Transform LaunchOffset;
+    public float Ammo = 100;
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -24,8 +25,16 @@ public class Char2DMover : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            if (Ammo > 0)
+            {
+                Ammo -= 10;
+                Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            }
         }
+    }
+    public void Recharge(float resource)
+    {
+        Ammo = resource;
     }
 
 }
