@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc23acf07cbe5ee428fafe3fb1c7647d
+guid: d829c93299b9a3849bc44d54d939f850
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6804907579659805131
-    second: Rocky_Road_64x64_0
+      213: 8255111754677691662
+    second: Rocky_Road_64x64 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rocky_Road_64x64_0
+      name: Rocky_Road_64x64 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53e93093c9c1091a0800000000000000
-      internalID: -6804907579659805131
+      spriteID: e0527b6476c009270800000000000000
+      internalID: 8255111754677691662
       vertices: []
       indices: 
       edges: []
