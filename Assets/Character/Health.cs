@@ -3,7 +3,7 @@ using UnityEngine;
 public class Health: MonoBehaviour
 {
     [SerializeField] private float startingHealth;
-    private float currentHealth;
+    public float currentHealth { get; private set; }
     [SerializeField] private AudioClip explosionClip;
     public GameObject Explosion;
     public Transform pos;
@@ -14,6 +14,7 @@ public class Health: MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+
         if (currentHealth > 0)
         {
             
@@ -29,5 +30,6 @@ public class Health: MonoBehaviour
             Destroy(ExplosionObject, 1.2f);
 
         }
+        
     }
 }

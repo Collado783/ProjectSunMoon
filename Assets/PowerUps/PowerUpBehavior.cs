@@ -10,9 +10,11 @@ public class PowerUpBehavior: MonoBehaviour
 
         if (player)
         {
-
+            
             player.Recharge(resource);
             Destroy(gameObject);
+            ammoManager.instance.AddPoint();
+
         }
 
 

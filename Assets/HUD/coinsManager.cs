@@ -1,0 +1,29 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class coinsManager
+{
+    public Text coinsText;
+    int coinsIndex = 0;
+    public static coinsManager instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
+
+    void Start()
+    {
+        coinsText.text = coinsIndex.ToString() + "/12";
+
+    }
+
+
+    public void AddPoint()
+    {
+        coinsIndex += 1;
+        coinsText.text = coinsIndex.ToString() + "/12";
+
+    }
+}
