@@ -8,6 +8,7 @@ public class Char2DMover : MonoBehaviour
     public GameObject ProjectilePrefab;
     public Transform LaunchOffset;
     public float Ammo = 100;
+    public CoinBehavior cb;
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -35,6 +36,14 @@ public class Char2DMover : MonoBehaviour
     public void Recharge(float resource)
     {
         Ammo = resource;
+    }
+    protected void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Coin")
+        {
+            Destroy(collision.gameObject);
+            cb.coinCount++;
+        }
     }
 
 }

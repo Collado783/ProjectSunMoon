@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 2f3e15446c9973c48bbae37dcb460c25
+guid: c2c20b542b1472047a6b41b0ce96d89f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4896814669311985850
-    second: Space Background (2)_0
+      213: -3182048824577569071
+    second: SUN COIN 8-12_0
+  - first:
+      213: -1494606235140828598
+    second: SUN COIN 8-12_1
+  - first:
+      213: 8706590622908376696
+    second: SUN COIN 8-12_2
+  - first:
+      213: 1872134391250285510
+    second: SUN COIN 8-12_3
+  - first:
+      213: -563003838844044914
+    second: SUN COIN 8-12_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Space Background (2)_0
+      name: SUN COIN 8-12_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2550
-        height: 1050
+        x: 159
+        y: 1247
+        width: 98
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 647bcb0b0050b0cb0800000000000000
-      internalID: -4896814669311985850
+      spriteID: 1deca19047717d3d0800000000000000
+      internalID: -3182048824577569071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 8-12_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 255
+        width: 1602
+        height: 1698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42d8534c87124be0800000000000000
+      internalID: -1494606235140828598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 8-12_2
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1247
+        width: 98
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8766333ca0604d870800000000000000
+      internalID: 8706590622908376696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 8-12_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 831
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3f3425f482bf910800000000000000
+      internalID: 1872134391250285510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 8-12_4
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 831
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89f482ddfecf28f0800000000000000
+      internalID: -563003838844044914
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Space Background (2)_0: -4896814669311985850
+      SUN COIN 8-12_0: -3182048824577569071
+      SUN COIN 8-12_1: -1494606235140828598
+      SUN COIN 8-12_2: 8706590622908376696
+      SUN COIN 8-12_3: 1872134391250285510
+      SUN COIN 8-12_4: -563003838844044914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

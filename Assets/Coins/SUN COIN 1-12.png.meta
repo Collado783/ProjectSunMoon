@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: bc23acf07cbe5ee428fafe3fb1c7647d
+guid: 5b36ae47db8ab484ab301d01a915c8d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6804907579659805131
-    second: Rocky_Road_64x64_0
+      213: 4622034324827256350
+    second: SUN COIN 1-12_0
+  - first:
+      213: -6902427891002399938
+    second: SUN COIN 1-12_1
+  - first:
+      213: -3634493027038880426
+    second: SUN COIN 1-12_2
+  - first:
+      213: -3028623752718304416
+    second: SUN COIN 1-12_3
+  - first:
+      213: 459763975943272225
+    second: SUN COIN 1-12_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rocky_Road_64x64_0
+      name: SUN COIN 1-12_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 159
+        y: 1247
+        width: 98
+        height: 226
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53e93093c9c1091a0800000000000000
-      internalID: -6804907579659805131
+      spriteID: e16bdf6dab3c42040800000000000000
+      internalID: 4622034324827256350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 1-12_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 255
+        width: 1602
+        height: 1698
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e33ad0d5766a530a0800000000000000
+      internalID: -6902427891002399938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 1-12_2
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 1247
+        width: 98
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d96b829dfaf8dc0800000000000000
+      internalID: -3634493027038880426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 1-12_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 831
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b3ae44eba28f5d0800000000000000
+      internalID: -3028623752718304416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN 1-12_4
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 831
+        width: 130
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127be9276e8616600800000000000000
+      internalID: 459763975943272225
       vertices: []
       indices: 
       edges: []
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Rocky_Road_64x64_0: -6804907579659805131
+      SUN COIN 1-12_0: 4622034324827256350
+      SUN COIN 1-12_1: -6902427891002399938
+      SUN COIN 1-12_2: -3634493027038880426
+      SUN COIN 1-12_3: -3028623752718304416
+      SUN COIN 1-12_4: 459763975943272225
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
