@@ -21,8 +21,12 @@ public class Health: MonoBehaviour
         else
         {
             Destroy(gameObject);
-            Instantiate(Explosion, pos.position, transform.rotation);
             AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
+            GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+
+            AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
+
+            Destroy(ExplosionObject, 1.2f);
 
         }
     }

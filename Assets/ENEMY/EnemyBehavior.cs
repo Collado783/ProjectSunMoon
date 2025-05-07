@@ -25,10 +25,11 @@ public class Enemybehavior : MonoBehaviour
             Destroy(gameObject);
             
 
-            Instantiate(Explosion, pos.position, transform.rotation);
+            GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+            
             AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
 
-            Destroy(Explosion);
+            Destroy(ExplosionObject, 1.2f);
             
         }
     }

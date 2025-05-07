@@ -7,12 +7,20 @@ public class PowerUpBehavior: MonoBehaviour
     {
 
         var player = collision.collider.GetComponent<Char2DMover>();
+
         if (player)
         {
+
             player.Recharge(resource);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+
+
         
+     
+         
+        
+     
     }
     
 }
