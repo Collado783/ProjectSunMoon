@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Health: MonoBehaviour
 {
     [SerializeField] private float startingHealth;
-    private float currentHealth;
+    public float currentHealth { get; private set; }
     [SerializeField] private AudioClip explosionClip;
     public GameObject Explosion;
     public Transform pos;

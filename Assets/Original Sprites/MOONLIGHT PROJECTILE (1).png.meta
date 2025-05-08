@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MOONLIGHT PROJECTILE (1)_0: 5189846733677993613
+      MOONLIGHT PROJECTILE (1)_1: 158655862086822445
+      MOONLIGHT PROJECTILE (1)_2: -53192603124625958
+      MOONLIGHT PROJECTILE (1)_3: -6192874473937756825
+      MOONLIGHT PROJECTILE (1)_4: -3727461435353937670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,6 +13,7 @@ public class PowerUpBehavior: MonoBehaviour
 
             player.Recharge(resource);
             Destroy(gameObject);
+            ammoManager.instance.AddPoint();
         }
 
 

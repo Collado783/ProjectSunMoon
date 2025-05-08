@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SUN COIN 9-12_0: 2335375689158902397
+      SUN COIN 9-12_1: 8825630057745612074
+      SUN COIN 9-12_2: 3290906209707762508
+      SUN COIN 9-12_3: -3768675022123965381
+      SUN COIN 9-12_4: -1327165893591384271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
