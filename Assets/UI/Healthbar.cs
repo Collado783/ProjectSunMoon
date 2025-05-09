@@ -7,14 +7,14 @@ public class Healthbar : MonoBehaviour
     [SerializeField] private Image completeHealthbar;
     [SerializeField] private Image currentHealthbar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        completeHealthbar.fillAmount = characterHealth.currentHealth /8;
+        completeHealthbar.fillAmount = characterHealth.currentHealth / 8;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        completeHealthbar.fillAmount = characterHealth.currentHealth / 8;
+        currentHealthbar.fillAmount = characterHealth.currentHealth / 8;
     }
 }

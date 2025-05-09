@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: df66c6f0a5f893d4391b447d83d44c53
+guid: ca1ab2fe3753c124984749b423661897
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7968478665934269200
-    second: FULL HEALTH_0
+      213: -5134419418765639168
+    second: POWER UP 2 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FULL HEALTH_0
+      name: POWER UP 2 (1)_0
       rect:
         serializedVersion: 2
-        x: 351
-        y: 511
-        width: 1346
-        height: 1026
+        x: 191
+        y: 255
+        width: 1666
+        height: 1634
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01b6a4bb029b59e60800000000000000
-      internalID: 7968478665934269200
+      spriteID: 0024b90fdb0eeb8b0800000000000000
+      internalID: -5134419418765639168
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      FULL HEALTH_0: 7968478665934269200
+      POWER UP 2 (1)_0: -5134419418765639168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

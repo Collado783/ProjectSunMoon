@@ -28,7 +28,7 @@ public class Char2DMover : MonoBehaviour
         {
             if (Ammo > 0)
             {
-                Ammo -= 10;
+                ammoManager.instance.Fire();
                 Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
             }
         }

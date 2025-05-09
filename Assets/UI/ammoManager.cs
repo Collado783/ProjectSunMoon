@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ammoManager : MonoBehaviour
 {
     public Text ammoText;
-    int ammoIndex = 1000;
+    int ammoIndex = 100;
     public static ammoManager instance;
 
     private void Awake()
