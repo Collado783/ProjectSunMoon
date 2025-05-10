@@ -7,6 +7,7 @@ public class Enemybehavior : MonoBehaviour
     public float Hitpoints;
     public float MaxHitpoints = 3;
     public GameObject Explosion;
+    public GameObject coin;
     public Transform pos;
     [SerializeField]private AudioClip explosionClip;
   
@@ -25,7 +26,8 @@ public class Enemybehavior : MonoBehaviour
             Destroy(gameObject);
             
 
-            GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+           GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+            GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation); 
             
             AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
 

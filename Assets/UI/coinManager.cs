@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class coinManager : MonoBehaviour 
 {
     public Text coinsText;
-    int coinsIndex = 0;
+    public int coinsIndex = 0;
     public static coinManager instance;
 
     private void Awake()
@@ -20,5 +21,6 @@ public class coinManager : MonoBehaviour
     {
         coinsIndex += 1;
         coinsText.text = coinsIndex.ToString() + "/12";
+        if (coinsIndex == 12) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
     }
 }

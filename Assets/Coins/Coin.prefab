@@ -139,3 +139,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinCount: 0
   coinText: {fileID: 0}
+  goalCoin: {fileID: 281284722663237574, guid: 5829e7ef6e8bb8f4996ccb2aab4b14d9, type: 3}
+  maxCoins: 12

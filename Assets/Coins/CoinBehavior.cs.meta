@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 1c77531dc457d624c900f2f504e1d3e0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - coinText: {instanceID: 0}
+  - goalCoin: {fileID: 281284722663237574, guid: 5829e7ef6e8bb8f4996ccb2aab4b14d9, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

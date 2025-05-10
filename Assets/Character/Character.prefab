@@ -296,11 +296,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1771e99fbcf7f2d499f2b8f1dd320191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 10
-  JumpForce: 15
-  ProjectilePrefab: {fileID: 5400827058646807450, guid: 8002461576a58cd4bbe3e97f913931f5, type: 3}
-  LaunchOffset: {fileID: 8529630379535189076}
-  Ammo: 100
+  movementSpeed: 5
+  jumpForce: 5
+  projectilePrefab: {fileID: 5400827058646807450, guid: 8002461576a58cd4bbe3e97f913931f5, type: 3}
+  launchOffset: {fileID: 2309351572755279632}
+  ammo: 100
 --- !u!114 &2996269502483144956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,5 +315,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   explosionClip: {fileID: 8300000, guid: 409d9dbd5bebc234da781b6013ac35db, type: 3}
-  Explosion: {fileID: 6897763914264139802, guid: 5cd6ae87847ca884d8a5a56c005eac63, type: 3}
+  explosion: {fileID: 0}
   pos: {fileID: 1417762502156136638}

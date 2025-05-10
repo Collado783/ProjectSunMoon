@@ -211,6 +211,7 @@ MonoBehaviour:
   Hitpoints: 0
   MaxHitpoints: 3
   Explosion: {fileID: 6897763914264139802, guid: 5cd6ae87847ca884d8a5a56c005eac63, type: 3}
+  coin: {fileID: 5232092655192782828, guid: 202b952a729dace4fb923f53929a3c17, type: 3}
   pos: {fileID: 8558215353081501478}
   explosionClip: {fileID: 8300000, guid: 409d9dbd5bebc234da781b6013ac35db, type: 3}
 --- !u!114 &2500828458371717307
