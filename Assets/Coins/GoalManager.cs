@@ -37,7 +37,7 @@ public class GoalManager : MonoBehaviour
     private void UpdateSprite()
     {
         spriteRenderer.sprite = metaSprites[currentCoins];
-        Debug.Log($" Moendas: {currentCoins} sprtie: {spriteRenderer.sprite}");
+       
     }
     protected void OnCollisionEnter2D(Collision2D collision)
     {
