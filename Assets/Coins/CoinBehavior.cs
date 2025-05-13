@@ -4,13 +4,14 @@ using UnityEngine.UI;
 
 public class CoinBehavior : MonoBehaviour 
 {
-    public int coinCount=0;
+    public int coinCount=1;
     public Text coinText;
     public GameObject goalCoin;
     public Sprite[] goalSprites;
     public int maxCoins = 12;
     public  static CoinBehavior coinBehavior;
     private SpriteRenderer goalSpriteRenderer;
+    
     
     private void Start()
     {
@@ -24,12 +25,12 @@ public class CoinBehavior : MonoBehaviour
     }
     private void Update()
     {
-       
-        //if (coinText != null)
-        //{
-        //    coinText.text = "Monedas: " + coinCount;
-        //}
-        //if (coinCount == maxCoins) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
+
+        if (coinText != null)
+        {
+            coinText.text = "Monedas: " + coinCount;
+        }
+        if (coinCount == maxCoins) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
 
 
     }
@@ -45,28 +46,12 @@ public class CoinBehavior : MonoBehaviour
            
             Destroy(gameObject);
             coinManager.instance.AddPoint();
-            //AddPoint();
-           
+            
+            GoalManager.goalManager.AddCoin();
+
         }
 
     }
-    //private void AddPoint()
-    //{
-    //    coinCount++;
-     
-
-       
-    //    if (goalSpriteRenderer != null && coinCount <= maxCoins && coinCount - 1 < goalSprites.Length)
-    //    {
-    //        goalSpriteRenderer.sprite = goalSprites[coinCount - 1];
-         
-    //    }
-
-       
-    //    if (coinCount == maxCoins)
-    //    {
-            
-    //    }
-    //}
     
+
 }

@@ -21,6 +21,6 @@ public class coinManager : MonoBehaviour
     {
         coinsIndex += 1;
         coinsText.text = coinsIndex.ToString() + "/12";
-        if (coinsIndex == 12) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
+        
     }
 }
