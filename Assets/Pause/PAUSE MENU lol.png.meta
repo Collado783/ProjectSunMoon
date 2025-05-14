@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 0347850e425471d488d0c0194d621ebc
+guid: b865ad449f1296749a3a5ff9dfcc32b5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2567901486566435263
-    second: RESTART BUTTON_0
+      213: 5217299963670677214
+    second: PAUSE MENU lol_0
+  - first:
+      213: -7963952669971366871
+    second: PAUSE MENU lol_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RESTART BUTTON_0
+      name: PAUSE MENU lol_0
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1733
-        width: 7735
-        height: 4535
+        x: 2502
+        y: 1066
+        width: 7202
+        height: 6136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 146920b043bfc5cd0800000000000000
-      internalID: -2567901486566435263
+      spriteID: ed6cf3daca2976840800000000000000
+      internalID: 5217299963670677214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAUSE MENU lol_1
+      rect:
+        serializedVersion: 2
+        x: 11886
+        y: 5316
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c3552dd3b5a7190800000000000000
+      internalID: -7963952669971366871
       vertices: []
       indices: 
       edges: []

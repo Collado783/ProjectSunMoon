@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 73cce5f31d9b1174cbb72215569c2bdb
+guid: 316ec12c91b3d4d48bc98cc1e1ee0a8a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5829966800116514227
-    second: START BUTTON_0
+      213: 5415490174196293667
+    second: HOME BUTTON_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: START BUTTON_0
+      name: HOME BUTTON_0
       rect:
         serializedVersion: 2
         x: 400
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d420cb2751cc71fa0800000000000000
-      internalID: -5829966800116514227
+      spriteID: 320a695fe9fa72b40800000000000000
+      internalID: 5415490174196293667
       vertices: []
       indices: 
       edges: []

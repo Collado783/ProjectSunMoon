@@ -1524,7 +1524,7 @@ GameObject:
   - component: {fileID: 1551619517}
   - component: {fileID: 1551619516}
   m_Layer: 5
-  m_Name: Canel
+  m_Name: Cancel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
