@@ -140,4 +140,18 @@ MonoBehaviour:
   coinCount: 0
   coinText: {fileID: 0}
   goalCoin: {fileID: 281284722663237574, guid: 5829e7ef6e8bb8f4996ccb2aab4b14d9, type: 3}
+  goalSprites:
+  - {fileID: 7844102291386036663, guid: 9418da37d78e20f489d0115089fd31b8, type: 3}
+  - {fileID: -6902427891002399938, guid: 5b36ae47db8ab484ab301d01a915c8d0, type: 3}
+  - {fileID: 3086953804605386248, guid: ff5b71b441d72934c8ce446be911668b, type: 3}
+  - {fileID: -5867743662443544051, guid: 3b4c85ccad1eff348a8772a8a1314a69, type: 3}
+  - {fileID: 7818824959334251489, guid: cb17bd7da9907854f90636ac702b0c5f, type: 3}
+  - {fileID: -1449242632312254990, guid: 08195e895ed7467409c9b3a9fd80456b, type: 3}
+  - {fileID: 280072313644260267, guid: 59f2b7e484703d449b0e4bf8e79d076b, type: 3}
+  - {fileID: -7056272580976117427, guid: 60b60e4746e432a44a6780655ffbb16f, type: 3}
+  - {fileID: -1494606235140828598, guid: c2c20b542b1472047a6b41b0ce96d89f, type: 3}
+  - {fileID: 8825630057745612074, guid: 8607ac7338e1fa9498375e5dd2fa5f7b, type: 3}
+  - {fileID: 8640031601576356622, guid: ab63f4d41c760e14293d3c91c83132f6, type: 3}
+  - {fileID: -9075036344023590554, guid: d7c920b40bfc9ac4dadbe738a43abb3b, type: 3}
+  - {fileID: 7547620555963108274, guid: f3a4b214a5345d541906ad98291b4284, type: 3}
   maxCoins: 12
