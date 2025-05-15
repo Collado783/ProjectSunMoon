@@ -1542,7 +1542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1551,7 +1551,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 5217299963670677214, guid: b865ad449f1296749a3a5ff9dfcc32b5, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4561,6 +4561,7 @@ GameObject:
   - component: {fileID: 1633142277}
   - component: {fileID: 1633142276}
   - component: {fileID: 1633142282}
+  - component: {fileID: 1633142283}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -4702,6 +4703,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinsText: {fileID: 283856858}
   coinsIndex: 0
+--- !u!114 &1633142283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633142275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a46a94a62ee2b544b8675e1805195294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 0}
 --- !u!1001 &1635605406
 PrefabInstance:
   m_ObjectHideFlags: 0

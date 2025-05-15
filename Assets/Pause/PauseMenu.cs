@@ -3,9 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
+
     public void BackToMenu()
     {
         SceneManager.LoadSceneAsync(0);
 
     }
+
+    
 }
