@@ -18,7 +18,7 @@ public class GoalManager : MonoBehaviour
             return;
         }
         goalManager = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
