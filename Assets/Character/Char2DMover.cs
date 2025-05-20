@@ -16,7 +16,12 @@ public class Char2DMover : MonoBehaviour
     private void Update()
     {
         var movement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+
+        //RaycastHit2D raycastHit2D = Physics2D.Raycast(transform.position, Vector2.right * Mathf.Sign(movement), 0.01f, LayerMask.NameToLayer("Map"));
+        //if (raycastHit2D.collider == null)
+        {
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        }
         
         if(!Mathf.Approximately(movement, 0))
             transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
