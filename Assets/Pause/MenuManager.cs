@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
-    public MenuManager pausePanel;
+    public GameObject pausePanel;
+    bool isActive = false;
     void Start()
     {
         
@@ -11,7 +12,20 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pausePanel.gameObject.SetActive(true);
+            if (isActive == false)
+            {
+                pausePanel.gameObject.SetActive(true);
+                isActive = true;
+            }
+            else
+            {
+                pausePanel.gameObject.SetActive(false);
+                isActive = false;
+            }
+
+
+
         }
+
     }
 }
