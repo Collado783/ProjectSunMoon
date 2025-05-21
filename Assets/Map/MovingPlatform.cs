@@ -15,7 +15,7 @@ public class MovingPlatform : MonoBehaviour
     
     void Update()
     {
-        if(Vector2.Distance(transform.position, points[i].position) < 0.02f)
+        if(Vector2.Distance(transform.position, points[i].position) < 3.5f)
         {
             i++;
             if (i == points.Length)
