@@ -1,7 +1,10 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class Char2DMover : MonoBehaviour
 {
+    private float resetTime=5;
+    private float lifeTime;
     public float MovementSpeed = 1;
     public float JumpForce = 1;
     private Rigidbody2D _rigidbody;
@@ -67,9 +70,16 @@ public class Char2DMover : MonoBehaviour
                 ammoManager.instance.Fire();
                 Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
                 Ammo -= 10;
+               
 
             }
         }
+        
+        //lifeTime += Time.deltaTime;
+        //if (lifeTime > resetTime)
+        //{
+           
+        //}
     }
     public void Recharge(float resource)
     {
