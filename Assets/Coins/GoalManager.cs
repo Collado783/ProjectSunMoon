@@ -2,6 +2,7 @@ using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GoalManager : MonoBehaviour
 {
 
@@ -47,10 +48,20 @@ public class GoalManager : MonoBehaviour
 
         if (player && currentCoins == 12)
         {
-
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            UnlockNewLevel();
+            SceneManager.LoadSceneAsync(0);
         }
 
+    }
+
+    public void UnlockNewLevel()
+    {
+        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+        {
+            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+            PlayerPrefs.Save();
+        }
     }
 }
     

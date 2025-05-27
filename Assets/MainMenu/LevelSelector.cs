@@ -5,9 +5,16 @@ using UnityEngine.UI;
 public class LevelSelector : MonoBehaviour
 {
     public Button[] buttons;
+
+    public void Start()
+    {
+        PlayerPrefs.DeleteKey("UnlockedLevel");
+        PlayerPrefs.Save();
+    }
     public void Awake()
     {
-        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevels", 1);
+        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
@@ -16,7 +23,10 @@ public class LevelSelector : MonoBehaviour
         {
             buttons[i].interactable = true;
         }
+
     }
+
+    
 
 
 }
