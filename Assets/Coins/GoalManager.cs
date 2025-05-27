@@ -49,7 +49,6 @@ public class GoalManager : MonoBehaviour
         if (player && currentCoins == 12)
         {
             UnlockNewLevel();
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadSceneAsync(0);
         }
 
