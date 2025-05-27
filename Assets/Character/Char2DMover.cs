@@ -16,7 +16,7 @@ public class Char2DMover : MonoBehaviour
     private float _distance;
 
     private void Start()
-    {
+    { 
         _rigidbody = GetComponent<Rigidbody2D>();
 
         Collider2D collider = gameObject.GetComponent<Collider2D>();
@@ -39,16 +39,12 @@ public class Char2DMover : MonoBehaviour
         RaycastHit2D raycastHit2Dlu = Physics2D.Raycast((transform.position - Vector3.down * -0.7f), Vector2.right * Mathf.Sign(movement), _distance, layerMask);
 
 
-        if (/*movement > 0 && */raycastHit2Drd.collider == null || raycastHit2Dru.collider == null)
+        if (raycastHit2Drd.collider == null || raycastHit2Dru.collider == null)
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
       
         }
-        //else if (movement < 0 && raycastHit2Dl.collider == null)
-        //{
-        //    transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-        //    Debug.Log("Moving right");
-        //}
+        
        
 
 
@@ -75,11 +71,7 @@ public class Char2DMover : MonoBehaviour
             }
         }
         
-        //lifeTime += Time.deltaTime;
-        //if (lifeTime > resetTime)
-        //{
-           
-        //}
+        
     }
     public void Recharge(float resource)
     {
