@@ -1,16 +1,16 @@
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void SetSceneToLoad(int sceme)
-    { }
+    public void SetSceneToLoad(int levelToPlay)
+    {
+        GameManager.Instance.selectedLevel = levelToPlay;
+    }
 
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync(1);
-     
+        SceneManager.LoadSceneAsync(GameManager.Instance.selectedLevel);
     }
 
     public void Exit()
