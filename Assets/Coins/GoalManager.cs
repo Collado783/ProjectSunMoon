@@ -48,21 +48,22 @@ public class GoalManager : MonoBehaviour
 
         if (player && currentCoins == 12)
         {
-            UnlockNewLevel();
+            //UnlockNewLevel();
+            GameManager.Instance.UnlockLevels();
             SceneManager.LoadSceneAsync(0);
         }
 
     }
 
-    public void UnlockNewLevel()
-    {
-        if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
-        {
-            PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-            PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
-            PlayerPrefs.Save();
-        }
-    }
+    //public void UnlockNewLevel()
+    //{
+    //    if (SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+    //    {
+    //        PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+    //        PlayerPrefs.SetInt("UnlockedLevel", PlayerPrefs.GetInt("UnlockedLevel", 1) + 1);
+    //        PlayerPrefs.Save();
+    //    }
+    //}
 }
     
    

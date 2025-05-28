@@ -4,10 +4,7 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject pausePanel;
     bool isActive = false;
-    void Start()
-    {
-        
-    }
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

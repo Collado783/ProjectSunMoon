@@ -8,24 +8,24 @@ public class LevelSelector : MonoBehaviour
 
     public void Start()
     {
-        PlayerPrefs.DeleteKey("UnlockedLevel");
-        PlayerPrefs.Save();
-    }
-    public void Awake()
-    {
-        int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        //int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevel", 1);
+        int unlockedLvls = GameManager.Instance.unlockedLevels;
+
         
-        for (int i = 0; i < buttons.Length; i++)
+        for (int i = 0; i < buttons.Length; i++)  
         {
-            buttons[i].interactable = false;
+            buttons[i].interactable = false;  //desactivar els botons l'index dels quals sigui major o igual als nivells desbloquejats
+
         }
-        for (int i = 0; i < unlockedLevels; i++)
+        for (int i = 0; i < unlockedLvls; i++)
         {
             buttons[i].interactable = true;
+
         }
 
     }
 
+    
     
 
 
