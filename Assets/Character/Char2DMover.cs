@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Char2DMover : MonoBehaviour
 {
-    private float resetTime=5;
+    private float resetTime = 5;
     private float lifeTime;
     public float MovementSpeed = 1;
     public float JumpForce = 1;
@@ -16,7 +16,7 @@ public class Char2DMover : MonoBehaviour
     private float _distance;
 
     private void Start()
-    { 
+    {
         _rigidbody = GetComponent<Rigidbody2D>();
 
         Collider2D collider = gameObject.GetComponent<Collider2D>();
@@ -25,9 +25,10 @@ public class Char2DMover : MonoBehaviour
     }
     private void Update()
     {
+        IsGrounded();
         var movement = Input.GetAxis("Horizontal");
 
-        Debug.DrawRay(transform.position-Vector3.down*-0.7f, Vector2.right * Mathf.Sign(movement) * _distance, Color.red);
+        Debug.DrawRay(transform.position - Vector3.down * -0.7f, Vector2.right * Mathf.Sign(movement) * _distance, Color.red);
         Debug.DrawRay((transform.position - Vector3.down * -0.7f) - (Vector3.right * Mathf.Sign(movement) * _distance), Vector2.right * Mathf.Sign(movement) * _distance, Color.blue);
         Debug.DrawRay(transform.position, Vector2.right * Mathf.Sign(movement) * _distance, Color.red);
         Debug.DrawRay((transform.position) - (Vector3.right * Mathf.Sign(movement) * _distance), Vector2.right * Mathf.Sign(movement) * _distance, Color.blue);
@@ -42,23 +43,24 @@ public class Char2DMover : MonoBehaviour
         if (raycastHit2Drd.collider == null || raycastHit2Dru.collider == null)
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-      
+
         }
-        
-       
 
 
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f)
+
+
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f&&_rigidbody.gravityScale==3.5)
         {
             _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+        }
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f && _rigidbody.gravityScale == -3.5)
+        {
+            _rigidbody.AddForce(new Vector2(0, -JumpForce), ForceMode2D.Impulse);
         }
 
         if (!Mathf.Approximately(movement, 0))
             transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f)
-        {
-            _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        }
+       
         if (Input.GetButtonDown("Fire1"))
         {
             if (Ammo > 0)
@@ -66,17 +68,26 @@ public class Char2DMover : MonoBehaviour
                 ammoManager.instance.Fire();
                 Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
                 Ammo -= 10;
-               
+
 
             }
         }
-        
-        
+
+
     }
     public void Recharge(float resource)
     {
         Ammo = resource;
     }
+    bool IsGrounded()
+    {
+        float direction = Mathf.Sign(_rigidbody.gravityScale);
+        Vector2 origin = transform.position;
+        float distance = 0.1f;
+        LayerMask groundLayer = LayerMask.GetMask("Map");
 
+        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down * direction, distance, groundLayer);
+        return hit.collider != null;
 
+    }
 }
