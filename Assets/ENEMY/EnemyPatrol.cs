@@ -2,37 +2,28 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1f;
-    Rigidbody2D myRigidBody;
-    BoxCollider2D myBox;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-void Start()
-    {
-        myRigidBody = GetComponent<Rigidbody2D>();
-        myBox = GetComponent<BoxCollider2D>();
-    }
-    // Update is called once per frame
+    public float speed;
+    public float rayDist;
+    private bool movingRight;
+    public Transform groundDetect;
+
     void Update()
     {
-        if (IsFacingRight())
+        transform.Translate(Vector2.right* speed*Time.deltaTime);
+        RaycastHit2D groundCheck = Physics2D.Raycast(groundDetect.position, Vector2.down, rayDist);
+        
+        if (groundCheck.collider == false)
         {
-            //move right.
-            myRigidBody.linearVelocity = new Vector2(moveSpeed, 0f);
+            if (movingRight)
+            {
+                transform.eulerAngles = new Vector3(0, -180, 0);
+                movingRight = false;
+            }
+            else
+            {
+                transform.eulerAngles = new Vector3(0, 0, 0);
+                movingRight = true;
+            }
         }
-        else
-        {
-            //Move left.
-            myRigidBody.linearVelocity = new Vector2(-moveSpeed, 0f);
-        }
-    }
-    private bool IsFacingRight()
-    {
-        return transform.localScale.x > Mathf.Epsilon;
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        //Turn around
-        transform.localScale = new Vector2(-(Mathf.Sign(myRigidBody.linearVelocity.x)),
-        transform.localScale.y);
     }
 }
