@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4754190936247830001
+--- !u!1 &921818054786311021
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6160543347463834526}
-  - component: {fileID: 5451728336251103744}
-  - component: {fileID: 3377432161856722006}
-  - component: {fileID: 3216677306973895881}
-  - component: {fileID: 1824472191370831122}
+  - component: {fileID: 4286675052634137568}
+  - component: {fileID: 8718393655168528303}
+  - component: {fileID: 962526456479821982}
+  - component: {fileID: 8226145367052882397}
+  - component: {fileID: 5207947267980091428}
   m_Layer: 0
-  m_Name: MOONLIGHT PROJECTILE (1)_0
-  m_TagString: PlayerBullet
+  m_Name: FallingProjectiles
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6160543347463834526
+--- !u!4 &4286675052634137568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754190936247830001}
+  m_GameObject: {fileID: 921818054786311021}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.019381225, y: 0.16335201, z: 0.061376747}
-  m_LocalScale: {x: 0.025454469, y: 0.025454469, z: 0.025454469}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7008551, w: 0.7133038}
+  m_LocalPosition: {x: 14.555191, y: 5.5528255, z: 1.2457997}
+  m_LocalScale: {x: 0.19803527, y: 0.19803527, z: 0.19803527}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 292063937650969940}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &5451728336251103744
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 88.991}
+--- !u!212 &8718393655168528303
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754190936247830001}
+  m_GameObject: {fileID: 921818054786311021}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,25 +79,25 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -53192603124625958, guid: e7888f6a7a564644ca406420155b6e42, type: 3}
+  m_Sprite: {fileID: -2665537838267151834, guid: 165ac1966ecb9d74a83f4ceb622215d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.34, y: 0.34}
+  m_Size: {x: 17.94, y: 9.94}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &3377432161856722006
+--- !u!50 &962526456479821982
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754190936247830001}
+  m_GameObject: {fileID: 921818054786311021}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -116,14 +116,14 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 2
---- !u!58 &3216677306973895881
+  m_Constraints: 0
+--- !u!58 &8226145367052882397
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754190936247830001}
+  m_GameObject: {fileID: 921818054786311021}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -151,50 +151,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -5.2142544, y: 0}
-  m_Radius: 4.6237826
---- !u!114 &1824472191370831122
+  m_Offset: {x: -4.0989814, y: 0.0000004886366}
+  m_Radius: 5.6162877
+--- !u!114 &5207947267980091428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4754190936247830001}
+  m_GameObject: {fileID: 921818054786311021}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13fead23dc42ce0408393036d3f697be, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fa091ad734b49748ae4f45364e9a701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
---- !u!1 &5400827058646807450
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 292063937650969940}
-  m_Layer: 0
-  m_Name: Projectile
-  m_TagString: PlayerBullet
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &292063937650969940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400827058646807450}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9941812, y: -1.155352, z: -0.061376747}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6160543347463834526}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  fallSpeed: 3

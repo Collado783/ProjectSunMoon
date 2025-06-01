@@ -74,6 +74,7 @@ public class Char2DMover : MonoBehaviour
         }
 
 
+
     }
     public void Recharge(float resource)
     {
