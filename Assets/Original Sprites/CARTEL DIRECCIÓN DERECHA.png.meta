@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 0f3c2e3ca84d44648807ba8992a48c0f
+guid: 2c677dff39339a24d8987aaa2d27c1fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8066588415368051391
-    second: SPECIAL JUMPING BLOCK_0
+      213: -5163310033915567950
+    second: "CARTEL DIRECCI\xD3N DERECHA_0"
+  - first:
+      213: 7934672374851278753
+    second: "CARTEL DIRECCI\xD3N DERECHA_1"
+  - first:
+      213: -1296310087146195228
+    second: "CARTEL DIRECCI\xD3N DERECHA_2"
+  - first:
+      213: -5230948752987632573
+    second: "CARTEL DIRECCI\xD3N DERECHA_3"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPECIAL JUMPING BLOCK_0
+      name: "CARTEL DIRECCI\xD3N DERECHA_0"
       rect:
         serializedVersion: 2
-        x: 63
+        x: 127
         y: 63
-        width: 1922
-        height: 1922
+        width: 1730
+        height: 1346
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145c4b82398bd0090800000000000000
-      internalID: -8066588415368051391
+      spriteID: 2b0a04b61ec3858b0800000000000000
+      internalID: -5163310033915567950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "CARTEL DIRECCI\xD3N DERECHA_1"
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 1407
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a79d183c7e9d1e60800000000000000
+      internalID: 7934672374851278753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "CARTEL DIRECCI\xD3N DERECHA_2"
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 1407
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e635e808d4920ee0800000000000000
+      internalID: -1296310087146195228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "CARTEL DIRECCI\xD3N DERECHA_3"
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1407
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c46ebe2dfe767b0800000000000000
+      internalID: -5230948752987632573
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPECIAL JUMPING BLOCK_0: -8066588415368051391
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BLOQUE GRAVEDAD INVERTIDA_0: 4832954852828169920
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
