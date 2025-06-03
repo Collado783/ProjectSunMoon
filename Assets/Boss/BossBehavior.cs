@@ -9,19 +9,24 @@ public class BossBehavior : MonoBehaviour
     public float timeBetweenAttacks = 2f;
     public int health = 10;
     private int maxHealth;
+    public float speed;
 
     public Sprite phase1Sprite; 
     public Sprite phase2Sprite; 
     private SpriteRenderer spriteRenderer;
+    public int startingPoint;
+    public Transform[] points;
 
     private float attackTimer;
     private bool changedPhase = false;
+    private int i;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = phase1Sprite;
         maxHealth = health;
+        transform.position = points[startingPoint].position;
     }
 
     void Update()
@@ -33,6 +38,15 @@ public class BossBehavior : MonoBehaviour
             Attack();
             attackTimer = 0f;
         }
+        if (Vector2.Distance(transform.position, points[i].position) < 3.5f)
+        {
+            i++;
+            if (i == points.Length)
+            {
+                i = 0;
+            }
+        }
+        transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
     }
 
     void Attack()

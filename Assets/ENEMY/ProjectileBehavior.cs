@@ -9,7 +9,7 @@ public class ProjectileBehavior : MonoBehaviour
     {
         transform.position -= transform.right * Time.deltaTime * Speed;
         lifetime += Time.deltaTime;
-        if (lifetime > resetTime)
+        if (lifetime >= resetTime)
         {
             Destroy(gameObject);
         }

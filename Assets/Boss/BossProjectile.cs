@@ -5,7 +5,11 @@ public class BossProjectile : MonoBehaviour
     public float speed = 5f;
     private float lifetime;
     private float resetTime = 5;
-
+    int layerMask;
+    private void Start()
+    {
+        layerMask= 1 << LayerMask.NameToLayer("Player") | 0 << LayerMask.NameToLayer("Default");
+    }
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;

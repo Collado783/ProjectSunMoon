@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: b7589e93dea5ca64fa2494bf7d1211d5
+guid: 7311578292cd0a24d9af9dcbbb73f842
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1876431336838819012
-    second: BOSS_0
+      213: 6050168482594894825
+    second: VERTICAL BOSS PROJECTILE_0
+  - first:
+      213: 8818665606674621358
+    second: VERTICAL BOSS PROJECTILE_1
+  - first:
+      213: 1171195476631953796
+    second: VERTICAL BOSS PROJECTILE_2
+  - first:
+      213: -1678198496120750145
+    second: VERTICAL BOSS PROJECTILE_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BOSS_0
+      name: VERTICAL BOSS PROJECTILE_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 63
-        width: 1986
-        height: 1954
+        x: 703
+        y: 191
+        width: 642
+        height: 1762
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cc60bdeb5c6a0a10800000000000000
-      internalID: 1876431336838819012
+      spriteID: 9e335540e2486f350800000000000000
+      internalID: 6050168482594894825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VERTICAL BOSS PROJECTILE_1
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 575
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3abce55a1326a70800000000000000
+      internalID: 8818665606674621358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VERTICAL BOSS PROJECTILE_2
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 511
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481213ba41ce04010800000000000000
+      internalID: 1171195476631953796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VERTICAL BOSS PROJECTILE_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbfb028fb57d5b8e0800000000000000
+      internalID: -1678198496120750145
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BOSS_0: 1876431336838819012
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
