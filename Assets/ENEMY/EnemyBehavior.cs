@@ -10,12 +10,18 @@ public class Enemybehavior : MonoBehaviour
     public GameObject coin;
     public Transform pos;
     [SerializeField]private AudioClip explosionClip;
+    float hitCooldown = 1;
+    float hitTimer;
   
 
     private void Start()
     {
         Hitpoints = MaxHitpoints;
        
+    }
+    private void Update()
+    {
+        hitTimer += Time.deltaTime;
     }
     public void TakeHit(float damage)
     {
@@ -34,5 +40,18 @@ public class Enemybehavior : MonoBehaviour
             Destroy(ExplosionObject, 1.2f);
             
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        var player = collision.collider.GetComponent<Health>();
+
+
+        if (player&&hitTimer>=hitCooldown)
+        {
+            player.TakeDamage(1);
+            hitTimer = 0;
+            
+        }
+
     }
 }

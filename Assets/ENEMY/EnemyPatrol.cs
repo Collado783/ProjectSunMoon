@@ -6,6 +6,7 @@ public class EnemyPatrol : MonoBehaviour
     public float rayDist;
     private bool movingRight;
     public Transform groundDetect;
+   
 
     void Update()
     {
@@ -20,16 +21,21 @@ public class EnemyPatrol : MonoBehaviour
 
         if (groundCheck.collider == false || wallCheck.collider == true)
         {
-            if (movingRight)
-            {
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }
-            else
-            {
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
+            changeDirection();
+        }
+        
+    }
+    public void changeDirection()
+    {
+        if (movingRight)
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            movingRight = false;
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            movingRight = true;
         }
     }
 }

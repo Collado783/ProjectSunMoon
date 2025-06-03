@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Char2DMover : MonoBehaviour
 {
-    private float resetTime = 5;
-    private float lifeTime;
+   
+    
     public float MovementSpeed = 1;
     public float JumpForce = 1;
     private Rigidbody2D _rigidbody;

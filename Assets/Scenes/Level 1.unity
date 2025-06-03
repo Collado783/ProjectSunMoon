@@ -5995,6 +5995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919940711}
   - component: {fileID: 919940710}
+  - component: {fileID: 919940712}
   m_Layer: 0
   m_Name: pixelart_starfield_0
   m_TagString: Untagged
@@ -6072,6 +6073,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919940712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919940709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87e2f7425c048341bc93927bc09f908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1129739558}
 --- !u!1001 &952565958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6357,6 +6371,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086430435}
   m_CullTransparentMesh: 1
+--- !u!1 &1129739558 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4475506195914619540, guid: a223a8db0f461dc4585fe4621fdefa8b, type: 3}
+  m_PrefabInstance: {fileID: 6294008424576930766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1152275752
 GameObject:
   m_ObjectHideFlags: 0
@@ -7821,7 +7840,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6811877679141374227, guid: a223a8db0f461dc4585fe4621fdefa8b, type: 3}
   m_PrefabInstance: {fileID: 6294008424576930766}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1129739558}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffe5da059ed54554ba8791265ff7c031, type: 3}
