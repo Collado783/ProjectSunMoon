@@ -25,6 +25,8 @@ public class GameManager
 
     public void UnlockLevels()
     {
+        //passar-li una variable perque no incrementi linealment, sino que augmenti segons el nivell que acabes de completar
+        //comprovar que no s'estan desbloquejant nivells de més endavant al jugar a nivells anteriors
         unlockedLevels++;
     }
 

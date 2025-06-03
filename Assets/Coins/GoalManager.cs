@@ -50,7 +50,7 @@ public class GoalManager : MonoBehaviour
         {
             //UnlockNewLevel();
             GameManager.Instance.UnlockLevels();
-            SceneManager.LoadSceneAsync(0);
+            SceneManager.LoadSceneAsync(SceneManager.GetSceneByName("MainMenu").buildIndex);
         }
 
     }
