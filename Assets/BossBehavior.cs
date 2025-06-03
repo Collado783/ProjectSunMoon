@@ -8,6 +8,7 @@ public class BossBehavior : MonoBehaviour
     public Transform[] fallPoints;
     public float timeBetweenAttacks = 2f;
     public int health = 10;
+    private int maxHealth;
 
     public Sprite phase1Sprite; 
     public Sprite phase2Sprite; 
@@ -20,6 +21,7 @@ public class BossBehavior : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = phase1Sprite;
+        maxHealth = health;
     }
 
     void Update()
@@ -61,7 +63,7 @@ public class BossBehavior : MonoBehaviour
         health -= amount;
 
         
-        if (!changedPhase && health <= health/2)
+        if (!changedPhase && health <= maxHealth / 2)
         {
             spriteRenderer.sprite = phase2Sprite;
             changedPhase = true;

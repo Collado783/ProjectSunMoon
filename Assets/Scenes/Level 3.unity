@@ -135,6 +135,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spikes_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7718203036622968273, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
+      propertyPath: m_Size.y
+      value: 7.917913
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718203036622968273, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.404249
+      objectReference: {fileID: 0}
     - target: {fileID: 8720521752153102807, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.020817
@@ -896,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5187669018673323369, guid: 202b952a729dace4fb923f53929a3c17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.302758
+      value: -8.44
       objectReference: {fileID: 0}
     - target: {fileID: 5187669018673323369, guid: 202b952a729dace4fb923f53929a3c17, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6130,6 +6138,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3805714711898296399, guid: 2b446fd9a5c1796468c38a19a547d0d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4478453539253271073, guid: 2b446fd9a5c1796468c38a19a547d0d2, type: 3}
       propertyPath: m_Name
       value: ENEMY SPRITE_0 (4)
@@ -6151,6 +6163,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1919067230}
     m_Modifications:
+    - target: {fileID: 3999276001729130914, guid: b75fdf68dea5c8d44928990f580a5002, type: 3}
+      propertyPath: m_Size.y
+      value: 25.61738
+      objectReference: {fileID: 0}
+    - target: {fileID: 3999276001729130914, guid: b75fdf68dea5c8d44928990f580a5002, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.63869
+      objectReference: {fileID: 0}
     - target: {fileID: 5774420971593395593, guid: b75fdf68dea5c8d44928990f580a5002, type: 3}
       propertyPath: m_LocalPosition.x
       value: 79.4994
@@ -6699,6 +6719,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3805714711898296399, guid: 2b446fd9a5c1796468c38a19a547d0d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4478453539253271073, guid: 2b446fd9a5c1796468c38a19a547d0d2, type: 3}
       propertyPath: m_Name
       value: ENEMY SPRITE_0 (1)
@@ -7008,6 +7032,14 @@ PrefabInstance:
     - target: {fileID: 4563568716256020655, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
       propertyPath: m_Name
       value: Spikes_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718203036622968273, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
+      propertyPath: m_Size.y
+      value: 7.596236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7718203036622968273, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2434106
       objectReference: {fileID: 0}
     - target: {fileID: 8720521752153102807, guid: 3ca9acfef163d4b4b941582356f345fa, type: 3}
       propertyPath: m_LocalPosition.x
