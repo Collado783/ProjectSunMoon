@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b7589e93dea5ca64fa2494bf7d1211d5
+guid: f7c92d9189d5b324c8d52fdeb23a285a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1876431336838819012
-    second: BOSS_0
+      213: 6080125052767180033
+    second: CARTEL DIAGONAL ARRIBA_0
+  - first:
+      213: 413776866261475030
+    second: CARTEL DIAGONAL ARRIBA_1
+  - first:
+      213: -2294822951241560852
+    second: CARTEL DIAGONAL ARRIBA_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BOSS_0
+      name: CARTEL DIAGONAL ARRIBA_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 63
-        width: 1986
-        height: 1954
+        x: 95
+        y: 31
+        width: 1666
+        height: 1858
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cc60bdeb5c6a0a10800000000000000
-      internalID: 1876431336838819012
+      spriteID: 10514288581f06450800000000000000
+      internalID: 6080125052767180033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARTEL DIAGONAL ARRIBA_1
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1407
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de1ac91ed70eb500800000000000000
+      internalID: 413776866261475030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CARTEL DIAGONAL ARRIBA_2
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 1215
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec45d03fa62720e0800000000000000
+      internalID: -2294822951241560852
       vertices: []
       indices: 
       edges: []
@@ -134,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BOSS_0: 1876431336838819012
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
