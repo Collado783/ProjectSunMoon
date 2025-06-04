@@ -712,6 +712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoalCoin
       objectReference: {fileID: 0}
+    - target: {fileID: 603208581459498385, guid: 5829e7ef6e8bb8f4996ccb2aab4b14d9, type: 3}
+      propertyPath: currentCoins
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 980909225901968237, guid: 5829e7ef6e8bb8f4996ccb2aab4b14d9, type: 3}
       propertyPath: coinCount
       value: 0
