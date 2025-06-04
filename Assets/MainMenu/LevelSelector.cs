@@ -8,9 +8,7 @@ public class LevelSelector : MonoBehaviour
 
     public void Start()
     {
-        //int unlockedLevels = PlayerPrefs.GetInt("UnlockedLevel", 1);
         int unlockedLvls = GameManager.Instance.unlockedLevels;
-
         
         for (int i = 0; i < buttons.Length; i++)  
         {
