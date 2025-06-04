@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2069797614554288998}
   - component: {fileID: 5040073941196584363}
   - component: {fileID: 2123710969219559861}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: BLOQUE GRAVEDAD INVERTIDA_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
