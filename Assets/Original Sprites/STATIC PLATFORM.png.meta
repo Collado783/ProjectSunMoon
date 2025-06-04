@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0f3c2e3ca84d44648807ba8992a48c0f
+guid: c4f1665b68bb6be40860b5ee61ac0988
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8066588415368051391
-    second: SPECIAL JUMPING BLOCK_0
+      213: 4441405011566608920
+    second: STATIC PLATFORM_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SPECIAL JUMPING BLOCK_0
+      name: STATIC PLATFORM_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 63
-        width: 1922
-        height: 1922
+        x: 31
+        y: 895
+        width: 1986
+        height: 258
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 145c4b82398bd0090800000000000000
-      internalID: -8066588415368051391
+      spriteID: 8124112935a03ad30800000000000000
+      internalID: 4441405011566608920
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      SPECIAL JUMPING BLOCK_0: -8066588415368051391
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

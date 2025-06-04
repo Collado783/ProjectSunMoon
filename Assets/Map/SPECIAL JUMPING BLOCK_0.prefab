@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6587963654048330287}
-  - component: {fileID: 3453959450688675778}
+  - component: {fileID: -4500460107747580326}
   - component: {fileID: 4362278818798734733}
-  - component: {fileID: 8461548554711575604}
-  m_Layer: 0
+  - component: {fileID: -675588177478061269}
+  m_Layer: 3
   m_Name: SPECIAL JUMPING BLOCK_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,13 +28,13 @@ Transform:
   m_GameObject: {fileID: 2047023086621853427}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.497, y: -1.498, z: 0}
-  m_LocalScale: {x: 0.04911984, y: 0.04911984, z: 0.04911984}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3453959450688675778
+--- !u!212 &-4500460107747580326
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8066588415368051391, guid: 0f3c2e3ca84d44648807ba8992a48c0f, type: 3}
+  m_Sprite: {fileID: -6674246998988202591, guid: 838f0e81c819fcd40a7fdf1a38f79dd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.22, y: 19.22}
+  m_Size: {x: 19.86, y: 2.58}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -127,15 +127,15 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.22, y: 19.22}
-    newSize: {x: 19.22, y: 19.22}
+    oldSize: {x: 14.74, y: 8.98}
+    newSize: {x: 19.86, y: 2.58}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 15.5567665, y: 2.7026157}
   m_EdgeRadius: 0
---- !u!114 &8461548554711575604
+--- !u!114 &-675588177478061269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

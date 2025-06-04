@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "CARTEL DIRECCI\xD3N DERECHA_0": -5163310033915567950
+      "CARTEL DIRECCI\xD3N DERECHA_1": 7934672374851278753
+      "CARTEL DIRECCI\xD3N DERECHA_2": -1296310087146195228
+      "CARTEL DIRECCI\xD3N DERECHA_3": -5230948752987632573
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

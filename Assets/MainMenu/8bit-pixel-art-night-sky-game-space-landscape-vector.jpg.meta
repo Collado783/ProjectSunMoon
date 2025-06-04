@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      8bit-pixel-art-night-sky-game-space-landscape-vector_0: -2055033763092110028
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

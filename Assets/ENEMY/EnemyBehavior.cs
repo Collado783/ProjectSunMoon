@@ -9,15 +9,16 @@ public class Enemybehavior : MonoBehaviour
     public GameObject Explosion;
     public GameObject coin;
     public Transform pos;
-    [SerializeField]private AudioClip explosionClip;
+    [SerializeField] private AudioClip explosionClip;
     float hitCooldown = 1;
     float hitTimer;
-  
+
 
     private void Start()
     {
         Hitpoints = MaxHitpoints;
-       
+        hitTimer = hitCooldown;
+
     }
     private void Update()
     {
@@ -28,17 +29,17 @@ public class Enemybehavior : MonoBehaviour
         Hitpoints -= damage;
         if (Hitpoints <= 0)
         {
-            
-            Destroy(gameObject);
-            
 
-           GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
-            GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation); 
-            
+            Destroy(gameObject);
+
+
+            GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+            GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation);
+
             AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
 
             Destroy(ExplosionObject, 1.2f);
-            
+
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,11 +47,19 @@ public class Enemybehavior : MonoBehaviour
         var player = collision.collider.GetComponent<Health>();
 
 
-        if (player&&hitTimer>=hitCooldown)
+        if (player && hitTimer >= hitCooldown)
         {
             player.TakeDamage(1);
             hitTimer = 0;
-            
+            EnemyPatrol enemyPatrol = GetComponent<EnemyPatrol>();
+            if (enemyPatrol != null)
+            {
+                enemyPatrol.changeDirection();
+            }
+            else
+            { 
+                Debug.LogError($"{gameObject.name} is missing enemyPatrol");
+            }
         }
 
     }

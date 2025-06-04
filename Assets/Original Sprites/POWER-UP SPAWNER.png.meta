@@ -1,0 +1,467 @@
+fileFormatVersion: 2
+guid: 221984c0656f5d24f86044925aef4a22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -316431115368907062
+    second: POWER-UP SPAWNER_0
+  - first:
+      213: 6049736659650405250
+    second: POWER-UP SPAWNER_1
+  - first:
+      213: -4717044801981115725
+    second: POWER-UP SPAWNER_2
+  - first:
+      213: 2470770176116995030
+    second: POWER-UP SPAWNER_3
+  - first:
+      213: -4949600467183300728
+    second: POWER-UP SPAWNER_4
+  - first:
+      213: -2974951970406066838
+    second: POWER-UP SPAWNER_5
+  - first:
+      213: -5955104711868870084
+    second: POWER-UP SPAWNER_6
+  - first:
+      213: 5212998991235505456
+    second: POWER-UP SPAWNER_7
+  - first:
+      213: 8081183211139096798
+    second: POWER-UP SPAWNER_8
+  - first:
+      213: 2923820819006110144
+    second: POWER-UP SPAWNER_9
+  - first:
+      213: -9200943660734185767
+    second: POWER-UP SPAWNER_10
+  - first:
+      213: 3052243433589303617
+    second: POWER-UP SPAWNER_11
+  - first:
+      213: 4056684320340593724
+    second: POWER-UP SPAWNER_12
+  - first:
+      213: 6640299554801823370
+    second: POWER-UP SPAWNER_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_0
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1535
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace3e8cb39fcb9bf0800000000000000
+      internalID: -316431115368907062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_1
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1503
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 283ee17607bf4f350800000000000000
+      internalID: 6049736659650405250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_2
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1407
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2105c9eb0b98eb0800000000000000
+      internalID: -4717044801981115725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_3
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1375
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3351d6260f94220800000000000000
+      internalID: 2470770176116995030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_4
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1471
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f8e65699c7f4bb0800000000000000
+      internalID: -4949600467183300728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_5
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 1375
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a651914e1f8d6b6d0800000000000000
+      internalID: -2974951970406066838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_6
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1407
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c321dc8e0d73b5da0800000000000000
+      internalID: -5955104711868870084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 1279
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ddf0f76fa485840800000000000000
+      internalID: 5212998991235505456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_8
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1279
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0ebc88051262070800000000000000
+      internalID: 8081183211139096798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_9
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1375
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c930c73b8f739820800000000000000
+      internalID: 2923820819006110144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_10
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1279
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de7e8f3d7eaf4080800000000000000
+      internalID: -9200943660734185767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_11
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1279
+        width: 66
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149eb1b3b3fbb5a20800000000000000
+      internalID: 3052243433589303617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_12
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 1375
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c4cc765ec3c4830800000000000000
+      internalID: 4056684320340593724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: POWER-UP SPAWNER_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 447
+        width: 1986
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8ea5266345172c50800000000000000
+      internalID: 6640299554801823370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
