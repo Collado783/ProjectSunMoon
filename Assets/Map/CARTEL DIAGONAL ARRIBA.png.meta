@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CARTEL DIAGONAL ARRIBA_0: 6080125052767180033
+      CARTEL DIAGONAL ARRIBA_1: 413776866261475030
+      CARTEL DIAGONAL ARRIBA_2: -2294822951241560852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

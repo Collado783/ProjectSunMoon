@@ -12,6 +12,7 @@ public class Enemybehavior : MonoBehaviour
     [SerializeField] private AudioClip explosionClip;
     float hitCooldown = 1;
     float hitTimer;
+    bool spawnCoin=true;
 
 
     private void Start()
@@ -34,7 +35,7 @@ public class Enemybehavior : MonoBehaviour
 
 
             GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
-            GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation);
+            if (spawnCoin) { GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation); }
 
             AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
 
@@ -62,5 +63,9 @@ public class Enemybehavior : MonoBehaviour
             }
         }
 
+    }
+    public void DisableSpawnCoin()
+    {
+        spawnCoin = false;
     }
 }

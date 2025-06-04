@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VERTICAL BOSS PROJECTILE_0: 6050168482594894825
+      VERTICAL BOSS PROJECTILE_1: 8818665606674621358
+      VERTICAL BOSS PROJECTILE_2: 1171195476631953796
+      VERTICAL BOSS PROJECTILE_3: -1678198496120750145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

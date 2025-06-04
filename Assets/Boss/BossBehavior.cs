@@ -14,6 +14,7 @@ public class BossBehavior : MonoBehaviour
     public Sprite phase1Sprite; 
     public Sprite phase2Sprite; 
     private SpriteRenderer spriteRenderer;
+    public GameObject enemy;
     public int startingPoint;
     public Transform[] points;
 
@@ -47,6 +48,7 @@ public class BossBehavior : MonoBehaviour
             }
         }
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
+        if (changedPhase == true) { timeBetweenAttacks = 1f; speed = 3; }
     }
 
     void Attack()
@@ -66,10 +68,38 @@ public class BossBehavior : MonoBehaviour
 
     void DropFallingObjects()
     {
-        foreach (Transform point in fallPoints)
+        int alea = Random.Range(0, 2);
+        if (changedPhase == true)
         {
-            Instantiate(fallingObjectPrefab, point.position, Quaternion.identity);
+            int rand = Random.Range(0, 5);
+            foreach (Transform point in fallPoints)
+            {
+                if (rand != 4)
+                    Instantiate(fallingObjectPrefab, point.position, Quaternion.identity);
+                else
+                {
+                    GameObject spawnedEnemy = Instantiate(enemy, point.position, Quaternion.identity);
+                    Enemybehavior enemybehavior = spawnedEnemy.GetComponent<Enemybehavior>();
+                    if (enemybehavior != null)
+                    {
+                        enemybehavior.DisableSpawnCoin();
+                    }
+                    else
+                    {
+                        Debug.LogError($"Prefab {enemy.name} is missing EnemyBehavior component!");
+                    }
+                }
+            }
         }
+        else 
+        {
+            foreach (Transform point in fallPoints)
+                if (alea==0)
+            Instantiate(fallingObjectPrefab, point.position, Quaternion.identity);
+            else Instantiate(fallingObjectPrefab, point.position + new Vector3(-5, 0,0), Quaternion.identity);
+
+        }  
+        
     }
 
     public void TakeDamage(int amount)

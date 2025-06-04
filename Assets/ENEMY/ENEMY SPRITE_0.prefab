@@ -181,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6955044088675155496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hitpoints: 0
-  MaxHitpoints: 3
+  MaxHitpoints: 2
   Explosion: {fileID: 6897763914264139802, guid: 5cd6ae87847ca884d8a5a56c005eac63, type: 3}
   coin: {fileID: 5232092655192782828, guid: 202b952a729dace4fb923f53929a3c17, type: 3}
   pos: {fileID: 8558215353081501478}

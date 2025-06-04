@@ -34,11 +34,11 @@ public class CoinBehavior : MonoBehaviour
 
 
     }
-
-    protected void OnCollisionEnter2D(Collision2D collision)
+    
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
 
-        var player = collision.collider.GetComponent<Char2DMover>();
+        var player = collision.GetComponent<Char2DMover>();
 
 
         if (player)

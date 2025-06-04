@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 962526456479821982}
   - component: {fileID: 8226145367052882397}
   - component: {fileID: 5207947267980091428}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FallingProjectiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}

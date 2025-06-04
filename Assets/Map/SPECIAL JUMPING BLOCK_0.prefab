@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: -4500460107747580326}
   - component: {fileID: 4362278818798734733}
   - component: {fileID: -675588177478061269}
-  m_Layer: 3
+  - component: {fileID: 4263693224789088480}
+  m_Layer: 8
   m_Name: SPECIAL JUMPING BLOCK_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,3 +149,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounce: 10
+--- !u!61 &4263693224789088480
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047023086621853427}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.1124661, y: -3.4695773}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 14.74, y: 8.98}
+    newSize: {x: 19.86, y: 2.58}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 7.5647216, y: 2.0408447}
+  m_EdgeRadius: 0

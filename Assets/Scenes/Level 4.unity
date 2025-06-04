@@ -7933,6 +7933,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6674246998988202591, guid: 838f0e81c819fcd40a7fdf1a38f79dd6, type: 3}
+    - target: {fileID: 4263693224789088480, guid: fd8a42b68378e60429c703df019505f1, type: 3}
+      propertyPath: m_Size.y
+      value: 2.2269542
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263693224789088480, guid: fd8a42b68378e60429c703df019505f1, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.3765225
+      objectReference: {fileID: 0}
     - target: {fileID: 4362278818798734733, guid: fd8a42b68378e60429c703df019505f1, type: 3}
       propertyPath: m_Size.x
       value: 14.7791395

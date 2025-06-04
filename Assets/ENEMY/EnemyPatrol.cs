@@ -10,8 +10,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Start()
     {
-        layerMask = 1 << LayerMask.NameToLayer("Map") | 0 << LayerMask.NameToLayer("Default");
-        if(transform.right.x >= 0) { movingRight= true; }
+        layerMask = 1 << LayerMask.NameToLayer("Map") | 1 << LayerMask.NameToLayer("SpecialBlock");
+        if (transform.right.x >= 0) { movingRight= true; }
         else { movingRight= false; }
     }
     void Update()
