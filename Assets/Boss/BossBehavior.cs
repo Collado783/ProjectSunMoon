@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossBehavior : MonoBehaviour
 {
@@ -7,8 +8,8 @@ public class BossBehavior : MonoBehaviour
     public Transform shootPoint;
     public Transform[] fallPoints;
     public float timeBetweenAttacks = 2f;
-    public int health = 10;
-    private int maxHealth;
+    public int currentHealth;
+    private int maxHealth = 20;
     public float speed;
 
     public Sprite phase1Sprite; 
@@ -22,11 +23,14 @@ public class BossBehavior : MonoBehaviour
     private bool changedPhase = false;
     private int i;
 
+    public BossHealth healthBar;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = phase1Sprite;
-        maxHealth = health;
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         transform.position = points[startingPoint].position;
     }
 
@@ -102,18 +106,18 @@ public class BossBehavior : MonoBehaviour
         
     }
 
-    public void TakeDamage(int amount)
+    public void TakeDamage(int damage)
     {
-        health -= amount;
-
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
         
-        if (!changedPhase && health <= maxHealth / 2)
+        if (!changedPhase && currentHealth <= maxHealth / 2)
         {
             spriteRenderer.sprite = phase2Sprite;
             changedPhase = true;
         }
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
