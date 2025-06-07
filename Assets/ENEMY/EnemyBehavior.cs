@@ -37,7 +37,7 @@ public class Enemybehavior : MonoBehaviour
             GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
             if (spawnCoin) { GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation); }
 
-            AudioSource.PlayClipAtPoint(explosionClip, pos.position, 1f);
+            AudioSource.PlayClipAtPoint(explosionClip, pos.position,  1f);
 
             Destroy(ExplosionObject, 1.2f);
 

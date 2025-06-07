@@ -6,7 +6,7 @@ public class BossDeath : MonoBehaviour
     public GameObject sunPrefab;
     public Transform sunSpawnPoint;
     public float sunDescendSpeed = 1f;
-    public float groundY = -3.5f;
+    
 
     private bool hasHandledDeath = false;
 
