@@ -32,7 +32,7 @@ public class GameManager
         {
             return;
         }
-        unlockedLevels += completedLevel;
+        unlockedLevels++;
 
     }
 
