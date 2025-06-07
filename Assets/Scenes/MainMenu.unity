@@ -372,6 +372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfba680a6f5ad6e459260fd4eadaaec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 600070715}
+  nightBackground: {fileID: -2055033763092110028, guid: 88a668726a0324f4cb918ba4a8886d53, type: 3}
+  dayBackground: {fileID: -5873143306016135494, guid: 26267b0c5842c1e4d9289c55f962cb6e, type: 3}
 --- !u!1 &74435802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,7 +1159,7 @@ GameObject:
   - component: {fileID: 600070716}
   - component: {fileID: 600070715}
   m_Layer: 0
-  m_Name: Image
+  m_Name: NightBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1201,7 +1204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2055033763092110028, guid: 88a668726a0324f4cb918ba4a8886d53, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1444,6 +1447,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfba680a6f5ad6e459260fd4eadaaec5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundImage: {fileID: 0}
+  nightBackground: {fileID: 0}
+  dayBackground: {fileID: 0}
 --- !u!1 &767680104
 GameObject:
   m_ObjectHideFlags: 0

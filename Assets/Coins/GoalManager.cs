@@ -50,6 +50,11 @@ public class GoalManager : MonoBehaviour
         {
             GameManager.Instance.UnlockLevels(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
+
+            if (SceneManager.GetActiveScene().buildIndex == 5)
+            {
+                GameManager.Instance.fiveLevelsCompleted = true; //checks if the current scene is 5 (which means that you have completed all five levels), and sets the instance to true.
+            }
         }
 
     }

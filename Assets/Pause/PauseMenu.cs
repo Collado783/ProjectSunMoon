@@ -5,7 +5,7 @@ public class PauseMenu : MonoBehaviour
 {
     public void BackToMenu()
     {
-         SceneManager.LoadSceneAsync(0);
+         SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
     }
     
 

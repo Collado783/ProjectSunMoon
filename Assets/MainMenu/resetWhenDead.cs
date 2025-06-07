@@ -11,7 +11,7 @@ public class resetWhenDead : MonoBehaviour
         if (player == null)
         {
             resetTimer += Time.deltaTime;
-            if (resetTimer >= resetTime) { SceneManager.LoadScene(SceneManager.GetActiveScene().name); }
+            if (resetTimer >= resetTime) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
 
         }
     }

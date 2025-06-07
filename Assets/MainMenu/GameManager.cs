@@ -4,6 +4,7 @@ public class GameManager
     public int unlockedLevels { get; private set; }
     public int selectedLevel = 1;
     public int completedLevel = 0;
+    public bool fiveLevelsCompleted = false;
 
 
     public static GameManager Instance

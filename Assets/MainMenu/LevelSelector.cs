@@ -12,7 +12,7 @@ public class LevelSelector : MonoBehaviour
         
         for (int i = 0; i < buttons.Length; i++)  
         {
-            buttons[i].interactable = false;  //desactivar els botons l'index dels quals sigui major o igual als nivells desbloquejats
+            buttons[i].interactable = false;  //desactivar els botons l'index dels quals sigui menor als nivells desbloquejats
 
         }
         for (int i = 0; i < unlockedLvls; i++)
