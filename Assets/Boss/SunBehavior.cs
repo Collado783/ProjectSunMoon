@@ -4,8 +4,26 @@ using UnityEngine.SceneManagement;
 public class SunBehavior : MonoBehaviour
 {
     private float speed;
+    public AudioClip newTrack;
+    private AudioManager audioManager;
+    void Awake()
+    {
+        GameObject existingSun = GameObject.FindWithTag("Sun");
 
-
+        if (existingSun != null && existingSun != gameObject)
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+    public void Start()
+    {
+        audioManager = FindAnyObjectByType<AudioManager>();
+        if (newTrack != null)
+        {
+            audioManager.ChangeMusic(newTrack);
+        }
+    }
     public void Initialize(float descendSpeed)
     {
         speed = descendSpeed;
@@ -25,6 +43,10 @@ public class SunBehavior : MonoBehaviour
     }
     protected void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
+        var player = collision.collider.GetComponent<Char2DMover>();
+        if (player)
+        {
+            SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
+        }
     }
 }

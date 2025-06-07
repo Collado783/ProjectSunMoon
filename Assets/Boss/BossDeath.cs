@@ -22,6 +22,7 @@ public class BossDeath : MonoBehaviour
     public void HandleBossDeath()
     {
         DestroyAllEnemiesAndProjectiles();
+
         SpawnSun();
     }
 
