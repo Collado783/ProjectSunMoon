@@ -635,7 +635,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 428516369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &176390820
+--- !u!1 &163937764
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -643,22 +643,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 176390822}
-  - component: {fileID: 176390821}
+  - component: {fileID: 163937767}
+  - component: {fileID: 163937766}
+  - component: {fileID: 163937765}
   m_Layer: 0
-  m_Name: 11. Ruder Buster (DELTARUNE Chapter 3+4 Soundtrack) - Toby Fox
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &176390821
+--- !u!114 &163937765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163937764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03116d8161d7f54a85d03c6a0147b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current: {fileID: 163937766}
+--- !u!82 &163937766
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176390820}
+  m_GameObject: {fileID: 163937764}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -667,7 +681,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -749,13 +763,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &176390822
+--- !u!4 &163937767
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176390820}
+  m_GameObject: {fileID: 163937764}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1108,6 +1122,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d031c1e1c1071134da86d59f413746da, type: 3}
+--- !u!1 &391132336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391132338}
+  - component: {fileID: 391132337}
+  m_Layer: 0
+  m_Name: SunClean
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &391132337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391132336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b51fc7a91b61bf478b700b0339986ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &391132338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391132336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.136929, y: 1.088969, z: 1.263812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &411764864
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,6 +3449,10 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 229.10199
       objectReference: {fileID: 0}
+    - target: {fileID: 8218764245348293775, guid: e306c5a2e93c7534682d91b833b50719, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5161061956977912460, guid: 085766c476097c34a81fdd4ac7b887ab, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5918,4 +5980,5 @@ SceneRoots:
   - {fileID: 2138045593}
   - {fileID: 7357373785246694812}
   - {fileID: 934979406}
-  - {fileID: 176390822}
+  - {fileID: 163937767}
+  - {fileID: 391132338}

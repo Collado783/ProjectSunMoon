@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - Boss
   - BossProjectile
+  - Sun
   layers:
   - Default
   - TransparentFX

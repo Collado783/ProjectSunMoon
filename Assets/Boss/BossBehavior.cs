@@ -137,7 +137,7 @@ public class BossBehavior : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            // Aquí puedes usar Destroy(gameObject); o activar BossDeath, según lo hayas implementado.
+            
             Destroy(gameObject);
         }
     }
