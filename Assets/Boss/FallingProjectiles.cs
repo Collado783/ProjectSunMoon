@@ -6,6 +6,7 @@ public class FallingProjectiles : MonoBehaviour
     private float lifetime;
     private float resetTime = 5;
 
+    
     void Update()
     {
         transform.position += Vector3.down * fallSpeed * Time.deltaTime;

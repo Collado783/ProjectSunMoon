@@ -16,10 +16,11 @@ public class ammoManager : MonoBehaviour
     {
         ammoText.text = ammoIndex.ToString() + "/100";
     }
-    public void Fire()
+    public void Fire(int ammo)
     {
         if(ammoIndex>0)
-        ammoIndex -= 10;
+        ammoIndex -= ammo;
+        if (ammoIndex < 0) { ammoIndex = 0; }
         ammoText.text = ammoIndex.ToString() + "/100";
     }
     public void AddPoint()

@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - PlayerBullet
   - Boss
+  - BossProjectile
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Coins
   - SpecialBlock
   - BossProjectile
-  - 
+  - PlayerProjectile
   - 
   - 
   - 

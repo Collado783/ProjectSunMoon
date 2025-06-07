@@ -30,6 +30,7 @@ public class EnemyPatrol : MonoBehaviour
             changeDirection();
         }
         
+        
     }
     public void changeDirection()
     {

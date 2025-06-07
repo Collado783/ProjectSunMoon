@@ -172,9 +172,11 @@ MonoBehaviour:
   MovementSpeed: 9
   JumpForce: 15
   ProjectilePrefab: {fileID: 5400827058646807450, guid: 8002461576a58cd4bbe3e97f913931f5, type: 3}
+  ProjectilePrefab2: {fileID: 9219075291472652486, guid: 565b5e67a0d49324493cf91a8497e4b7, type: 3}
   LaunchOffset: {fileID: 2165188950805137696}
   Ammo: 100
   distanceDelta: 0.1
+  firePowerUp: 0
 --- !u!114 &6811877679141374227
 MonoBehaviour:
   m_ObjectHideFlags: 0

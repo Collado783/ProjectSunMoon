@@ -9,11 +9,13 @@ public class Char2DMover : MonoBehaviour
     public float JumpForce = 1;
     private Rigidbody2D _rigidbody;
     public GameObject ProjectilePrefab;
+    public GameObject ProjectilePrefab2;
     public Transform LaunchOffset;
     public float Ammo = 100;
 
     public float distanceDelta = 0.1f;
     private float _distance;
+    public bool firePowerUp = false;
 
     private void Start()
     {
@@ -60,16 +62,23 @@ public class Char2DMover : MonoBehaviour
 
         if (!Mathf.Approximately(movement, 0))
             transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-       
+
         if (Input.GetButtonDown("Fire1"))
         {
             if (Ammo > 0)
             {
-                ammoManager.instance.Fire();
-                Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-                Ammo -= 10;
-
-
+                if (firePowerUp)
+                {
+                    ammoManager.instance.Fire(20);
+                    Instantiate(ProjectilePrefab2, LaunchOffset.position, transform.rotation);
+                    Ammo -= 20;
+                }
+                else
+                {
+                    ammoManager.instance.Fire(10);
+                    Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+                    Ammo -= 10;
+                }
             }
         }
 

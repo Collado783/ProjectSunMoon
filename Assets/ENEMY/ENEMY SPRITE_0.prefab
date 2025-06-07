@@ -76,9 +76,9 @@ GameObject:
   - component: {fileID: 6955044088675155496}
   - component: {fileID: 6038151380525822003}
   - component: {fileID: 2500828458371717307}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ENEMY SPRITE_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

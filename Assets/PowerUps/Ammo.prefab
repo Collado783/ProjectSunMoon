@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8545600557994786353}
   - component: {fileID: 1524074739209679214}
   - component: {fileID: 3999276001729130914}
-  - component: {fileID: 2082289942594299}
+  - component: {fileID: 9179799314992024560}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 16.66, y: 16.34}
   m_EdgeRadius: 0
---- !u!114 &2082289942594299
+--- !u!114 &9179799314992024560
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,8 +172,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8503201695577702315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9aae6ed5a38461419eb522ceb6c37cc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8db92bb39472898428b521af31c8aec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 4485031531190125235, guid: 8389b28c53702bf4a978b18865c9df8c, type: 3}
   resource: 100
-  spawner: {fileID: 0}

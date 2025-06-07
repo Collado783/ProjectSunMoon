@@ -1,3 +1,4 @@
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,7 @@ public class BossBehavior : MonoBehaviour
     public GameObject fallingObjectPrefab;
     public Transform shootPoint;
     public Transform[] fallPoints;
+    public Transform[] enemyPoints;
     public float timeBetweenAttacks = 2f;
     public int currentHealth;
     private int maxHealth = 20;
@@ -24,13 +26,19 @@ public class BossBehavior : MonoBehaviour
     private int i;
 
     public BossHealth healthBar;
+    public BossDeath bossDeathHandler;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = phase1Sprite;
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+
+        if (healthBar != null)
+            healthBar.SetMaxHealth(maxHealth);
+        else
+            Debug.LogWarning("BossBehavior: No health bar assigned!");
+
         transform.position = points[startingPoint].position;
     }
 
@@ -76,11 +84,18 @@ public class BossBehavior : MonoBehaviour
         if (changedPhase == true)
         {
             int rand = Random.Range(0, 5);
+            if(rand!=4)
             foreach (Transform point in fallPoints)
             {
-                if (rand != 4)
+
+                    if (alea == 0)
                     Instantiate(fallingObjectPrefab, point.position, Quaternion.identity);
-                else
+                    else Instantiate(fallingObjectPrefab, point.position + new Vector3(-5, 0, 0), Quaternion.identity);
+
+                }
+            else
+            {
+                foreach (Transform point in enemyPoints)
                 {
                     GameObject spawnedEnemy = Instantiate(enemy, point.position, Quaternion.identity);
                     Enemybehavior enemybehavior = spawnedEnemy.GetComponent<Enemybehavior>();
@@ -93,6 +108,7 @@ public class BossBehavior : MonoBehaviour
                         Debug.LogError($"Prefab {enemy.name} is missing EnemyBehavior component!");
                     }
                 }
+                
             }
         }
         else 
@@ -109,8 +125,10 @@ public class BossBehavior : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-        
+
+        if (healthBar != null)
+            healthBar.SetHealth(currentHealth);
+
         if (!changedPhase && currentHealth <= maxHealth / 2)
         {
             spriteRenderer.sprite = phase2Sprite;
@@ -119,10 +137,11 @@ public class BossBehavior : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            // Aquí puedes usar Destroy(gameObject); o activar BossDeath, según lo hayas implementado.
             Destroy(gameObject);
         }
     }
 
-    
-   
+
+
 }

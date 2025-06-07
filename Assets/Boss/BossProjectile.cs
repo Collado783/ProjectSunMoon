@@ -8,7 +8,7 @@ public class BossProjectile : MonoBehaviour
     int layerMask;
     private void Start()
     {
-        //layerMask= 1 << LayerMask.NameToLayer("Player") | 0 << LayerMask.NameToLayer("Default");
+        
         Physics.IgnoreLayerCollision(0,8,true);
     }
     void Update()

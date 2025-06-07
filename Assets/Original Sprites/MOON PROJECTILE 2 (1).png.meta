@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-guid: 9670bd525905b9a42813ac8451e6e0e9
+guid: 9b8b2a46c9d1dd54993b136087a5f142
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1311637761281820591
-    second: HEALTH BAR BOSS (1)_0
+      213: 4069675907868205860
+    second: MOON PROJECTILE 2 (1)_0
   - first:
-      213: -337416806551518526
-    second: HEALTH BAR BOSS (1)_1
+      213: -537332743933869007
+    second: MOON PROJECTILE 2 (1)_1
   - first:
-      213: -2586334031500783636
-    second: HEALTH BAR BOSS (1)_2
+      213: -5420079995255600840
+    second: MOON PROJECTILE 2 (1)_2
   - first:
-      213: -7157064181820603291
-    second: HEALTH BAR BOSS (1)_3
+      213: -8881498861067154651
+    second: MOON PROJECTILE 2 (1)_3
   - first:
-      213: 1780572209800187719
-    second: HEALTH BAR BOSS (1)_4
-  - first:
-      213: -7642800043438379824
-    second: HEALTH BAR BOSS (1)_5
-  - first:
-      213: 2029063626126069015
-    second: HEALTH BAR BOSS (1)_6
+      213: 1615883013537162978
+    second: MOON PROJECTILE 2 (1)_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_0
+      name: MOON PROJECTILE 2 (1)_0
       rect:
         serializedVersion: 2
         x: 31
-        y: 895
-        width: 1986
-        height: 418
+        y: 639
+        width: 1826
+        height: 706
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,64 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 158feccc7602ccde0800000000000000
-      internalID: -1311637761281820591
+      spriteID: 42323771da46a7830800000000000000
+      internalID: 4069675907868205860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_1
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 1311
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c20040c331415bf0800000000000000
-      internalID: -337416806551518526
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_2
-      rect:
-        serializedVersion: 2
-        x: 1503
-        y: 1311
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cef44edb6ee7b1cd0800000000000000
-      internalID: -2586334031500783636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_3
+      name: MOON PROJECTILE 2 (1)_1
       rect:
         serializedVersion: 2
         x: 255
-        y: 863
-        width: 66
-        height: 66
+        y: 607
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 56449efdb000dac90800000000000000
-      internalID: -7157064181820603291
+      spriteID: 134c2af57b20b88f0800000000000000
+      internalID: -537332743933869007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_4
+      name: MOON PROJECTILE 2 (1)_2
       rect:
         serializedVersion: 2
-        x: 479
-        y: 831
-        width: 98
-        height: 98
+        x: 351
+        y: 607
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 74f821eadfcd5b810800000000000000
-      internalID: 1780572209800187719
+      spriteID: 839c69c06f108c4b0800000000000000
+      internalID: -5420079995255600840
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_5
+      name: MOON PROJECTILE 2 (1)_3
       rect:
         serializedVersion: 2
-        x: 1471
-        y: 831
-        width: 98
-        height: 98
+        x: 767
+        y: 607
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dce3819ad15fe590800000000000000
-      internalID: -7642800043438379824
+      spriteID: 52b4e0197d39eb480800000000000000
+      internalID: -8881498861067154651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HEALTH BAR BOSS (1)_6
+      name: MOON PROJECTILE 2 (1)_4
       rect:
         serializedVersion: 2
-        x: 1727
-        y: 863
-        width: 66
-        height: 66
+        x: 447
+        y: 543
+        width: 34
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71d09e51e9ea82c10800000000000000
-      internalID: 2029063626126069015
+      spriteID: 2e6687c1a05cc6610800000000000000
+      internalID: 1615883013537162978
       vertices: []
       indices: 
       edges: []
@@ -284,14 +234,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HEALTH BAR BOSS (1)_0: -1311637761281820591
-      HEALTH BAR BOSS (1)_1: -337416806551518526
-      HEALTH BAR BOSS (1)_2: -2586334031500783636
-      HEALTH BAR BOSS (1)_3: -7157064181820603291
-      HEALTH BAR BOSS (1)_4: 1780572209800187719
-      HEALTH BAR BOSS (1)_5: -7642800043438379824
-      HEALTH BAR BOSS (1)_6: 2029063626126069015
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
