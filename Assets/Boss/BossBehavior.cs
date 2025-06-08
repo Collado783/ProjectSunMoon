@@ -11,7 +11,7 @@ public class BossBehavior : MonoBehaviour
     public Transform[] enemyPoints;
     public float timeBetweenAttacks = 2f;
     public int currentHealth;
-    private int maxHealth = 20;
+    private int maxHealth = 40;
     public float speed;
 
     public Sprite phase1Sprite; 

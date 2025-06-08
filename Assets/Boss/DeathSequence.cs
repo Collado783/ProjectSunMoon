@@ -28,7 +28,7 @@ public class BossMonitor : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("DeathHandler no asignado al BossMonitor.");
+            Debug.LogWarning("DeathHandler no asignado");
         }
     }
 }

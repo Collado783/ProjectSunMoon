@@ -8,7 +8,7 @@ public class ProjectileArea : ProjectileBehavior
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
         
-        //does an array of all the collisions made with the raidus 
+        
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
        
 
@@ -29,7 +29,7 @@ public class ProjectileArea : ProjectileBehavior
 
     private void OnDrawGizmosSelected()
     {
-        // Esto solo dibuja el radio en el editor
+        // Esto solo dibuja el radio en el editor, no hace nada más 
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
