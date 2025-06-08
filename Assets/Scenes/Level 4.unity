@@ -10039,7 +10039,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -675588177478061269, guid: fd8a42b68378e60429c703df019505f1, type: 3}
       propertyPath: bounce
-      value: 48.6
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 2047023086621853427, guid: fd8a42b68378e60429c703df019505f1, type: 3}
       propertyPath: m_Name
