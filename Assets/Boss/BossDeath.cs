@@ -8,17 +8,6 @@ public class BossDeath : MonoBehaviour
     public float sunDescendSpeed = 1f;
     
 
-    private bool hasHandledDeath = false;
-
-    //private void OnDestroy()
-    //{
-    //    if (!hasHandledDeath) 
-    //    {
-    //        HandleBossDeath();
-    //        hasHandledDeath = true;
-    //    }
-    //}
-
     public void HandleBossDeath()
     {
         DestroyAllEnemiesAndProjectiles();
