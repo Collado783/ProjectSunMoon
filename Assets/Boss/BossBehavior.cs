@@ -26,7 +26,7 @@ public class BossBehavior : MonoBehaviour
     private int i;
 
     public BossHealth healthBar;
-    public BossDeath bossDeathHandler;
+    
 
     void Start()
     {
@@ -137,6 +137,7 @@ public class BossBehavior : MonoBehaviour
 
         if (currentHealth <= 0)
         {
+            
             
             Destroy(gameObject);
         }

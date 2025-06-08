@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class BossDeath : MonoBehaviour
 {
-    [Header("Sun Settings")]
+   
     public GameObject sunPrefab;
     public Transform sunSpawnPoint;
     public float sunDescendSpeed = 1f;
@@ -10,14 +10,14 @@ public class BossDeath : MonoBehaviour
 
     private bool hasHandledDeath = false;
 
-    private void OnDestroy()
-    {
-        if (!hasHandledDeath) 
-        {
-            HandleBossDeath();
-            hasHandledDeath = true;
-        }
-    }
+    //private void OnDestroy()
+    //{
+    //    if (!hasHandledDeath) 
+    //    {
+    //        HandleBossDeath();
+    //        hasHandledDeath = true;
+    //    }
+    //}
 
     public void HandleBossDeath()
     {

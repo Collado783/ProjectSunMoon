@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 26267b0c5842c1e4d9289c55f962cb6e
+guid: f8eb80949727b864daca055f6115af55
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5873143306016135494
-    second: 8Bit pixel graphic blue sky background with clouds_0
+      213: -4813961870173893333
+    second: Captura de pantalla 2025-06-08 123056_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 8Bit pixel graphic blue sky background with clouds_0
+      name: Captura de pantalla 2025-06-08 123056_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 736
-        height: 368
+        width: 377
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab6e1f9c7476e7ea0800000000000000
-      internalID: -5873143306016135494
+      spriteID: b2d820e3f2f513db0800000000000000
+      internalID: -4813961870173893333
       vertices: []
       indices: 
       edges: []
