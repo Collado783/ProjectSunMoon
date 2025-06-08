@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 600070716}
   - component: {fileID: 600070715}
   m_Layer: 0
-  m_Name: NightBackground
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,8 +1314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: -0.00000095367}
-  m_SizeDelta: {x: 2202.605, y: 1101.3025}
+  m_AnchoredPosition: {x: 42, y: -0.0000076294}
+  m_SizeDelta: {x: 3043.8198, y: 1521.9099}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &600070715
 MonoBehaviour:

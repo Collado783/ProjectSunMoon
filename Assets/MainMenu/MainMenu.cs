@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     public void Start()
     {
-        if (GameManager.Instance.fiveLevelsCompleted == true) //if the five levels are completed the background changes to a "blue sky" one, if not, it keeps the "night" one.
+        if (GameManager.Instance != null && GameManager.Instance.fiveLevelsCompleted == true) //if the five levels are completed the background changes to a "blue sky" one, if not, it keeps the "night" one.
         {
             backgroundImage.sprite = dayBackground; 
         }

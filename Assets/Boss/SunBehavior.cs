@@ -44,8 +44,10 @@ public class SunBehavior : MonoBehaviour
     protected void OnCollisionEnter2D(Collision2D collision)
     {
         var player = collision.collider.GetComponent<Char2DMover>();
+
         if (player)
         {
+            GameManager.Instance.fiveLevelsCompleted = true; 
             SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
         }
     }
