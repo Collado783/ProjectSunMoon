@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MOON IDLE ANIMATION 1_0: 8331372119988108461
+      MOON IDLE ANIMATION 1_1: 3990220770681727689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

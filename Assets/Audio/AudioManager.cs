@@ -4,6 +4,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioSource current;
+    private bool isPaused = false;
     void Start()
     {
         current.Play();
@@ -20,4 +21,20 @@ public class AudioManager : MonoBehaviour
         current.clip = music;
         current.Play();
     }
+
+    public void StopMusic()
+    {
+        if (isPaused)
+        {
+            current.Play();
+            isPaused = false;
+        }
+        else
+        {
+            current.Pause();
+            isPaused = true;
+        }
+
+    }
+
 }

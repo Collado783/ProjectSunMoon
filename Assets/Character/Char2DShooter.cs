@@ -11,6 +11,11 @@ public class Char2DShooter : MonoBehaviour
 
     private void Update()
     {
+        if (MenuManager.isPausePanelActive == true)
+        {
+            return;
+        }
+           
         if (Input.GetButtonDown("Fire1"))
         {
             Fire();

@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MOON JUMP ANIMATION_0: -2795059226545912820
+      MOON JUMP ANIMATION_1: -3433416683868290178
+      MOON JUMP ANIMATION_2: -3677820310314713958
+      MOON JUMP ANIMATION_3: 2611230550497494338
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
