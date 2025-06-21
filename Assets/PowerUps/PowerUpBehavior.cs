@@ -3,6 +3,7 @@ using UnityEngine;
 public abstract class PowerUpBehavior : MonoBehaviour
 {
     public PowerUpSpawner spawner;
+    [SerializeField] private AudioClip powerUpSound;
 
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
@@ -10,6 +11,7 @@ public abstract class PowerUpBehavior : MonoBehaviour
         if (player)
         {
             ApplyEffect(player);
+                AudioSource.PlayClipAtPoint(powerUpSound, transform.position, 1000000f); ;
 
             if (spawner != null)
                 spawner.NotifyPowerUpCollected();

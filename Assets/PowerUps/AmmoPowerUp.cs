@@ -6,7 +6,12 @@ public class PowerUpRecharge : PowerUpBehavior
 
     protected override void ApplyEffect(Char2DMover player)
     {
-        player.Recharge(resource);
+        Char2DShooter shooter = player.GetComponent<Char2DShooter>();
+        if (shooter != null)
+        {
+            shooter.Recharge(resource);
+        }
+
         ammoManager.instance.AddPoint();
     }
 }

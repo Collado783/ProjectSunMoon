@@ -19,16 +19,23 @@ public class FireBall : TrapDamage
         lifetime += Time.deltaTime;
         if (lifetime > resetTime)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        base.OnCollisionEnter2D(collision);
-        gameObject.SetActive(false);
+
+
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            
+        }
+        Destroy(gameObject);
     }
+    
 }
 

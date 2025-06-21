@@ -165,3 +165,4 @@ MonoBehaviour:
   - {fileID: -9075036344023590554, guid: d7c920b40bfc9ac4dadbe738a43abb3b, type: 3}
   - {fileID: 7547620555963108274, guid: f3a4b214a5345d541906ad98291b4284, type: 3}
   maxCoins: 12
+  coinSound: {fileID: 8300000, guid: 5d6c0ceddef5e1b4888e87d73e9a2d2a, type: 3}

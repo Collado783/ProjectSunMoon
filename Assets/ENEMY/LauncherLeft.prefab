@@ -1320,17 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 3
   firePoint: {fileID: 271564847710869953}
-  fireballs:
-  - {fileID: 5198678270159482551}
-  - {fileID: 8623899319400085683}
-  - {fileID: 2223012182683674270}
-  - {fileID: 8411122096582147094}
-  - {fileID: 6966302424262920913}
-  - {fileID: 6383629485139427152}
-  - {fileID: 9201190476837192305}
-  - {fileID: 5843188133597403330}
-  - {fileID: 9137546033741533055}
-  - {fileID: 3581982051010808551}
+  fireballPrefab: {fileID: 8224704042344525144, guid: fc870a7f9e07534409ea6ca49200a078, type: 3}
 --- !u!1 &7695539301242182094
 GameObject:
   m_ObjectHideFlags: 0

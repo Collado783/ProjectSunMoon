@@ -5566,6 +5566,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1578782398}
+    - target: {fileID: 8204671391671038528, guid: af0da61c8d5cee742b5ee33045b2b441, type: 3}
+      propertyPath: firstPhaseAtkTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204671391671038528, guid: af0da61c8d5cee742b5ee33045b2b441, type: 3}
+      propertyPath: secondPhaseAtkTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4538120607825765840, guid: af0da61c8d5cee742b5ee33045b2b441, type: 3}
     m_RemovedGameObjects: []

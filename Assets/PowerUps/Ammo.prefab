@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1524074739209679214}
   - component: {fileID: 3999276001729130914}
   - component: {fileID: 9179799314992024560}
+  - component: {fileID: 6664565995336181353}
   m_Layer: 0
   m_Name: Ammo
   m_TagString: Untagged
@@ -176,4 +177,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 4485031531190125235, guid: 8389b28c53702bf4a978b18865c9df8c, type: 3}
+  powerUpSound: {fileID: 8300000, guid: 999550b3e74f82f47b2a4637143de27e, type: 3}
   resource: 100
+--- !u!95 &6664565995336181353
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8503201695577702315}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f258d2ca90184b740805570ea7854636, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

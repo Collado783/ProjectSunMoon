@@ -1,40 +1,43 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using TMPro;
 
 public class Enemybehavior : MonoBehaviour
 {
-    public float Hitpoints;
-    public float MaxHitpoints = 3;
-    public GameObject Explosion;
+    public float hitpoints;
+    public float maxHitpoints;
+    public GameObject explosion;
     public GameObject coin;
     public Transform pos;
     [SerializeField] private AudioClip explosionClip;
     float hitCooldown = 1;
     float hitTimer;
     bool spawnCoin=true;
-
+    public int attack;
+    
 
     private void Start()
     {
-        Hitpoints = MaxHitpoints;
+        hitpoints = maxHitpoints;
         hitTimer = hitCooldown;
 
     }
     private void Update()
     {
         hitTimer += Time.deltaTime;
+        
     }
     public void TakeHit(float damage)
     {
-        Hitpoints -= damage;
-        if (Hitpoints <= 0)
+        hitpoints -= damage;
+        if (hitpoints <= 0)
         {
 
             Destroy(gameObject);
 
 
-            GameObject ExplosionObject = Instantiate(Explosion, pos.position, transform.rotation);
+            GameObject ExplosionObject = Instantiate(explosion, pos.position, transform.rotation);
             if (spawnCoin) { GameObject dropCoin = Instantiate(coin, pos.position, transform.rotation); }
 
             AudioSource.PlayClipAtPoint(explosionClip, pos.position,  1f);
@@ -50,7 +53,7 @@ public class Enemybehavior : MonoBehaviour
 
         if (player && hitTimer >= hitCooldown)
         {
-            player.TakeDamage(1);
+            player.TakeDamage(attack);
             hitTimer = 0;
             EnemyPatrol enemyPatrol = GetComponent<EnemyPatrol>();
             if (enemyPatrol != null)

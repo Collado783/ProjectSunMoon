@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings;
 
 public class CoinBehavior : MonoBehaviour 
 {
@@ -11,8 +12,9 @@ public class CoinBehavior : MonoBehaviour
     public int maxCoins = 12;
     public  static CoinBehavior coinBehavior;
     private SpriteRenderer goalSpriteRenderer;
-    
-    
+    [SerializeField] private AudioClip coinSound;
+
+
     private void Start()
     {
 
@@ -43,7 +45,7 @@ public class CoinBehavior : MonoBehaviour
 
         if (player)
         {
-           
+            AudioSource.PlayClipAtPoint(coinSound, transform.position, 1000000f);
             Destroy(gameObject);
             coinManager.instance.AddPoint();
             

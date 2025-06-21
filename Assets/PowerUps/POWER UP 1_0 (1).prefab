@@ -176,3 +176,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawner: {fileID: 4485031531190125235, guid: 8389b28c53702bf4a978b18865c9df8c, type: 3}
+  powerUpSound: {fileID: 8300000, guid: 999550b3e74f82f47b2a4637143de27e, type: 3}

@@ -4,6 +4,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class ProjectileArea : ProjectileBehavior
 {
     public float explosionRadius = 2f;
+    public int attack;
 
     protected override void OnCollisionEnter2D(Collision2D collision)
     {
@@ -18,10 +19,10 @@ public class ProjectileArea : ProjectileBehavior
             var boss = hit.GetComponent<BossBehavior>();
 
             if (enemy)
-                enemy.TakeHit(2);
+                enemy.TakeHit(attack);
 
             if (boss)
-                boss.TakeDamage(2);
+                boss.TakeDamage(attack);
         }
 
         base.OnCollisionEnter2D(collision); 

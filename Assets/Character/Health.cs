@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,16 +11,22 @@ public class Health: MonoBehaviour
     [SerializeField] private AudioClip explosionClip;
     public GameObject Explosion;
     public Transform pos;
+    [SerializeField] private AudioClip hitSound;
+
+
+
     private void Awake()
     {
         currentHealth = startingHealth;
+       
     }
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        AudioSource.PlayClipAtPoint(hitSound, pos.position, 1000000f);
         if (currentHealth > 0)
         {
-            
+           
         }
         else
         {
@@ -35,4 +42,7 @@ public class Health: MonoBehaviour
 
         }
     }
+  
+    
+
 }

@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class FallingProjectiles : MonoBehaviour
 {
-    public float fallSpeed = 3f;
+    float fallSpeed = 3f;
     private float lifetime;
     private float resetTime = 5;
+    public int attack;
 
     
     void Update()
@@ -21,7 +22,7 @@ public class FallingProjectiles : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Health>().TakeDamage(1);
+            collision.gameObject.GetComponent<Health>().TakeDamage(attack);
             Destroy(gameObject);
         }
         Destroy(gameObject);

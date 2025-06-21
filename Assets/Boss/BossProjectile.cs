@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class BossProjectile : MonoBehaviour
 {
-    public float speed = 5f;
+    float speed = 5f;
     private float lifetime;
     private float resetTime = 5;
-    int layerMask;
+    public int attack;
     private void Start()
     {
         
@@ -25,7 +25,7 @@ public class BossProjectile : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Health>().TakeDamage(1);
+            collision.gameObject.GetComponent<Health>().TakeDamage(attack);
             Destroy(gameObject);
         }
     }

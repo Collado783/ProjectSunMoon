@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6070745897245475152}
-  - component: {fileID: 7579791212610767898}
   - component: {fileID: 7179964889009631651}
   - component: {fileID: 7706448087363217132}
   - component: {fileID: 3945364854980427836}
   - component: {fileID: 6811877679141374227}
+  - component: {fileID: -7729340421724559044}
   m_Layer: 6
   m_Name: Character 1
   m_TagString: Player
@@ -38,61 +38,6 @@ Transform:
   - {fileID: 6322689593977419202}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7579791212610767898
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4475506195914619540}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 2978287457126693226, guid: 1e0daea934de1c84d9c3085a2596d03d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!70 &7179964889009631651
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -169,14 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1771e99fbcf7f2d499f2b8f1dd320191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 9
-  JumpForce: 15
-  ProjectilePrefab: {fileID: 5400827058646807450, guid: 8002461576a58cd4bbe3e97f913931f5, type: 3}
-  ProjectilePrefab2: {fileID: 9219075291472652486, guid: 565b5e67a0d49324493cf91a8497e4b7, type: 3}
-  LaunchOffset: {fileID: 2165188950805137696}
-  Ammo: 100
+  movementSpeed: 9
+  jumpForce: 15
   distanceDelta: 0.1
-  firePowerUp: 0
+  animator: {fileID: 5367087105532048864}
+  desiredTime: 0.75
 --- !u!114 &6811877679141374227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +135,24 @@ MonoBehaviour:
   explosionClip: {fileID: 8300000, guid: 409d9dbd5bebc234da781b6013ac35db, type: 3}
   Explosion: {fileID: 6897763914264139802, guid: 5cd6ae87847ca884d8a5a56c005eac63, type: 3}
   pos: {fileID: 6322689593977419202}
+  hitSound: {fileID: 8300000, guid: ce21cb0b3e406e642a7fe9f08d1c9bf4, type: 3}
+--- !u!114 &-7729340421724559044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4475506195914619540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6852add4d5a9354f98fb905feb9f9eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammo: 100
+  projectileNormal: {fileID: 5400827058646807450, guid: 8002461576a58cd4bbe3e97f913931f5, type: 3}
+  projectileArea: {fileID: 9219075291472652486, guid: 565b5e67a0d49324493cf91a8497e4b7, type: 3}
+  launchOffset: {fileID: 2165188950805137696}
+  firePowerUp: 0
 --- !u!1 &9089933586370760426
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,6 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6322689593977419202}
   - component: {fileID: 1950881593449239343}
+  - component: {fileID: 5367087105532048864}
   m_Layer: 0
   m_Name: MOON IDLE SPRITE_0
   m_TagString: Untagged
@@ -280,6 +241,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5367087105532048864
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089933586370760426}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f44c2d922288ae44a0b4c75c29066c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &4204681175064813292
 PrefabInstance:
   m_ObjectHideFlags: 0

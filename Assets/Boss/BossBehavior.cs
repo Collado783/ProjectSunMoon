@@ -9,7 +9,9 @@ public class BossBehavior : MonoBehaviour
     public Transform shootPoint;
     public Transform[] fallPoints;
     public Transform[] enemyPoints;
-    public float timeBetweenAttacks = 2f;
+    float timeBetweenAttacks;
+    public float secondPhaseAtkTime;
+    public float firstPhaseAtkTime;
     public int currentHealth;
     private int maxHealth = 40;
     public float speed;
@@ -33,6 +35,7 @@ public class BossBehavior : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = phase1Sprite;
         currentHealth = maxHealth;
+        timeBetweenAttacks = firstPhaseAtkTime;
 
         if (healthBar != null)
             healthBar.SetMaxHealth(maxHealth);
@@ -60,7 +63,7 @@ public class BossBehavior : MonoBehaviour
             }
         }
         transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
-        if (changedPhase == true) { timeBetweenAttacks = 1f; speed = 3; }
+        if (changedPhase == true) { timeBetweenAttacks = secondPhaseAtkTime; speed = 3; }
     }
 
     void Attack()

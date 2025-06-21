@@ -1,103 +1,87 @@
 using NUnit.Framework;
 using UnityEngine;
 
+
+
+
 public class Char2DMover : MonoBehaviour
 {
-   
-    
-    public float MovementSpeed = 1;
-    public float JumpForce = 1;
-    private Rigidbody2D _rigidbody;
-    public GameObject ProjectilePrefab;
-    public GameObject ProjectilePrefab2;
-    public Transform LaunchOffset;
-    public float Ammo = 100;
+    public float movementSpeed;
+    public float jumpForce;
 
-    public float distanceDelta = 0.1f;
+    private Rigidbody2D _rigidbody;
     private float _distance;
-    public bool firePowerUp = false;
+    public float distanceDelta = 0.1f;
+    public Animator animator;
+    float timer=0;
+    public float desiredTime=1;
 
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
-
-        Collider2D collider = gameObject.GetComponent<Collider2D>();
-        float width = collider.bounds.extents.x;
+        float width = GetComponent<Collider2D>().bounds.extents.x;
         _distance = width + distanceDelta;
     }
+
     private void Update()
     {
+        HandleMovement();
+        HandleJump();
+        if (animator.GetBool("IsJumping") == true)
+        {
+            timer += Time.deltaTime; if (timer >= desiredTime) { animator.SetBool("IsJumping", false); timer = 0; }
+        }
+    }
+
+    private void HandleMovement()
+    {
         IsGrounded();
-        var movement = Input.GetAxis("Horizontal");
+        float movement = Input.GetAxis("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(movement));
+        int layerMask = LayerMask.GetMask("Map");
 
-        Debug.DrawRay(transform.position - Vector3.down * -0.7f, Vector2.right * Mathf.Sign(movement) * _distance, Color.red);
-        Debug.DrawRay((transform.position - Vector3.down * -0.7f) - (Vector3.right * Mathf.Sign(movement) * _distance), Vector2.right * Mathf.Sign(movement) * _distance, Color.blue);
-        Debug.DrawRay(transform.position, Vector2.right * Mathf.Sign(movement) * _distance, Color.red);
-        Debug.DrawRay((transform.position) - (Vector3.right * Mathf.Sign(movement) * _distance), Vector2.right * Mathf.Sign(movement) * _distance, Color.blue);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * Mathf.Sign(movement), _distance, layerMask);
 
-        int layerMask = 1 << LayerMask.NameToLayer("Map") | 0 << LayerMask.NameToLayer("Default");
-        RaycastHit2D raycastHit2Drd = Physics2D.Raycast(transform.position - Vector3.down * -0.7f, Vector2.right * Mathf.Sign(movement), _distance, layerMask);
-        RaycastHit2D raycastHit2Dld = Physics2D.Raycast((transform.position - Vector3.down * -0.7f), Vector2.right * Mathf.Sign(movement), _distance, layerMask);
-        RaycastHit2D raycastHit2Dru = Physics2D.Raycast(transform.position - Vector3.down * -0.7f, Vector2.right * Mathf.Sign(movement), _distance, layerMask);
-        RaycastHit2D raycastHit2Dlu = Physics2D.Raycast((transform.position - Vector3.down * -0.7f), Vector2.right * Mathf.Sign(movement), _distance, layerMask);
-
-
-        if (raycastHit2Drd.collider == null || raycastHit2Dru.collider == null)
+        if (hit.collider == null)
         {
-            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-
-        }
-
-
-
-
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f&&_rigidbody.gravityScale==3.5)
-        {
-            _rigidbody.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-        }
-        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f && _rigidbody.gravityScale == -3.5)
-        {
-            _rigidbody.AddForce(new Vector2(0, -JumpForce), ForceMode2D.Impulse);
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * movementSpeed;
         }
 
         if (!Mathf.Approximately(movement, 0))
-            transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-
-        if (Input.GetButtonDown("Fire1"))
         {
-            if (Ammo > 0)
-            {
-                if (firePowerUp)
-                {
-                    ammoManager.instance.Fire(20);
-                    Instantiate(ProjectilePrefab2, LaunchOffset.position, transform.rotation);
-                    Ammo -= 20;
-                }
-                else
-                {
-                    ammoManager.instance.Fire(10);
-                    Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-                    Ammo -= 10;
-                }
-            }
+            transform.rotation = movement > 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
+        }
+    }
+
+    private void HandleJump()
+    {
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f && _rigidbody.gravityScale == 3.5)
+        {
+            _rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            animator.SetBool("IsJumping", true);
         }
 
+        if (Input.GetButtonDown("Jump") && Mathf.Abs(_rigidbody.linearVelocity.y) < 0.001f && _rigidbody.gravityScale == -3.5)
+        {
+            _rigidbody.AddForce(new Vector2(0, -jumpForce), ForceMode2D.Impulse);
+            animator.SetBool("IsJumping", true);
+        }
+                
 
-
+            
+        
     }
-    public void Recharge(float resource)
+    public void OnLanding()
     {
-        Ammo = resource;
+        animator.SetBool("IsJumping", false);
     }
-    bool IsGrounded()
+    private bool IsGrounded()
     {
         float direction = Mathf.Sign(_rigidbody.gravityScale);
-        Vector2 origin = transform.position;
         float distance = 0.1f;
-        LayerMask groundLayer = LayerMask.GetMask("Map");
+        int layerMask = LayerMask.GetMask("Map");
 
-        RaycastHit2D hit = Physics2D.Raycast(origin, Vector2.down * direction, distance, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down * direction, distance, layerMask);
         return hit.collider != null;
-
     }
 }
