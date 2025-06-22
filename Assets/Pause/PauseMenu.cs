@@ -6,6 +6,7 @@ public class PauseMenu : MonoBehaviour
     public void BackToMenu()
     {
          SceneManager.LoadSceneAsync(SceneUtility.GetBuildIndexByScenePath("Assets/Scenes/MainMenu.unity"));
+        MenuManager.isPausePanelActive = false;
     }
     
 
