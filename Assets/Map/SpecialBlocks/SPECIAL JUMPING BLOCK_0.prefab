@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedeefcf07429604985bea3668d983c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 9f061795c8192914ba39db1dc8ff81df, type: 3}
   bounce: 10
 --- !u!61 &4263693224789088480
 BoxCollider2D:

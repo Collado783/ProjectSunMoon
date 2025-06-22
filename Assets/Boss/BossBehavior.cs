@@ -1,6 +1,5 @@
-using System.Drawing;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class BossBehavior : MonoBehaviour
 {

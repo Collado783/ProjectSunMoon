@@ -2,16 +2,17 @@ using UnityEngine;
 
 public class GravityBlock : MonoBehaviour
 {
+    [SerializeField] private AudioClip sound;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+
         if (other.CompareTag("Player"))
         {
             Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
 
             if (rb != null)
             {
-               
+                AudioSource.PlayClipAtPoint(sound, transform.position, 1000000f);
                 rb.gravityScale *= -1;
 
                

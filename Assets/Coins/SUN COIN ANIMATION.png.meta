@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 4ba09a60679e1634389ff9573d46329b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4012201594855317416
+    second: SUN COIN ANIMATION_0
+  - first:
+      213: 1517579539658600380
+    second: SUN COIN ANIMATION_1
+  - first:
+      213: 8957345852769649617
+    second: SUN COIN ANIMATION_2
+  - first:
+      213: -5705573683265104372
+    second: SUN COIN ANIMATION_3
+  - first:
+      213: 4175939816692772137
+    second: SUN COIN ANIMATION_4
+  - first:
+      213: 7859061948105722805
+    second: SUN COIN ANIMATION_5
+  - first:
+      213: 2464468978063371048
+    second: SUN COIN ANIMATION_6
+  - first:
+      213: -1305474885372877563
+    second: SUN COIN ANIMATION_7
+  - first:
+      213: -2701297380751425439
+    second: SUN COIN ANIMATION_8
+  - first:
+      213: 5563800492169010589
+    second: SUN COIN ANIMATION_9
+  - first:
+      213: 8959016338315296030
+    second: SUN COIN ANIMATION_10
+  - first:
+      213: 1354230707692288479
+    second: SUN COIN ANIMATION_11
+  - first:
+      213: -8667822413439620817
+    second: SUN COIN ANIMATION_12
+  - first:
+      213: 2579270542233388153
+    second: SUN COIN ANIMATION_13
+  - first:
+      213: 3751476739957954552
+    second: SUN COIN ANIMATION_14
+  - first:
+      213: -8059568561149182176
+    second: SUN COIN ANIMATION_15
+  - first:
+      213: -8440184814884954312
+    second: SUN COIN ANIMATION_16
+  - first:
+      213: 7845055129318648563
+    second: SUN COIN ANIMATION_17
+  - first:
+      213: 29499992555295187
+    second: SUN COIN ANIMATION_18
+  - first:
+      213: -580547580511278468
+    second: SUN COIN ANIMATION_19
+  - first:
+      213: 512722720245384310
+    second: SUN COIN ANIMATION_20
+  - first:
+      213: 8883072060894259084
+    second: SUN COIN ANIMATION_21
+  - first:
+      213: 3734432135710678727
+    second: SUN COIN ANIMATION_22
+  - first:
+      213: -4481333664040288004
+    second: SUN COIN ANIMATION_23
+  - first:
+      213: -5190835082675495974
+    second: SUN COIN ANIMATION_24
+  - first:
+      213: -8312936045734773315
+    second: SUN COIN ANIMATION_25
+  - first:
+      213: -7507273118035708852
+    second: SUN COIN ANIMATION_26
+  - first:
+      213: -3616098448330720378
+    second: SUN COIN ANIMATION_27
+  - first:
+      213: 2934705483100534646
+    second: SUN COIN ANIMATION_28
+  - first:
+      213: -5261066840517611613
+    second: SUN COIN ANIMATION_29
+  - first:
+      213: 6171036393357988646
+    second: SUN COIN ANIMATION_30
+  - first:
+      213: 2175257325591245886
+    second: SUN COIN ANIMATION_31
+  - first:
+      213: 5312693458814570822
+    second: SUN COIN ANIMATION_32
+  - first:
+      213: -7906215000488847947
+    second: SUN COIN ANIMATION_33
+  - first:
+      213: 5743908746908877086
+    second: SUN COIN ANIMATION_34
+  - first:
+      213: 5592943630650526426
+    second: SUN COIN ANIMATION_35
+  - first:
+      213: 7634137773844691181
+    second: SUN COIN ANIMATION_36
+  - first:
+      213: 7210086848503426818
+    second: SUN COIN ANIMATION_37
+  - first:
+      213: -5195118990598650967
+    second: SUN COIN ANIMATION_38
+  - first:
+      213: 3403005905816884334
+    second: SUN COIN ANIMATION_39
+  - first:
+      213: 2980070567905322166
+    second: SUN COIN ANIMATION_40
+  - first:
+      213: 5676031574126560131
+    second: SUN COIN ANIMATION_41
+  - first:
+      213: 9158835040530791955
+    second: SUN COIN ANIMATION_42
+  - first:
+      213: -1096742989090622759
+    second: SUN COIN ANIMATION_43
+  - first:
+      213: 2226871682201841528
+    second: SUN COIN ANIMATION_44
+  - first:
+      213: 6016877046904383958
+    second: SUN COIN ANIMATION_45
+  - first:
+      213: 1946617311176535906
+    second: SUN COIN ANIMATION_46
+  - first:
+      213: 2623348674877090109
+    second: SUN COIN ANIMATION_47
+  - first:
+      213: -3287940565849697580
+    second: SUN COIN ANIMATION_48
+  - first:
+      213: 1984474190200725325
+    second: SUN COIN ANIMATION_49
+  - first:
+      213: -7410765253896067001
+    second: SUN COIN ANIMATION_50
+  - first:
+      213: 4470046111699987874
+    second: SUN COIN ANIMATION_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SUN COIN ANIMATION_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9c948e54d994646888a217c5e50ad7
+      internalID: -725892512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN ANIMATION_1
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4096
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3dfe5e72bde0d478fb654ad06cfa71
+      internalID: 1327549935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN ANIMATION_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ceca544a5e6aa4f88eb08f3782946d
+      internalID: -301408168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN ANIMATION_3
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776e87e7b642bdf4b86218950bfc6710
+      internalID: -127947553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SUN COIN ANIMATION_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a15c06113075ed48a2f3920f0f05d46
+      internalID: 911385411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c7b0f8c0023a90a499ce9c839a99a41d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SUN COIN ANIMATION_0: -725892512
+      SUN COIN ANIMATION_1: 1327549935
+      SUN COIN ANIMATION_2: -301408168
+      SUN COIN ANIMATION_3: -127947553
+      SUN COIN ANIMATION_4: 911385411
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

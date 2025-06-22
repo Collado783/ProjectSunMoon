@@ -1,4 +1,3 @@
-using System.Net.NetworkInformation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +18,7 @@ public class GoalManager : MonoBehaviour
             return;
         }
         goalManager = this;
-        //DontDestroyOnLoad(gameObject);
+        
     }
 
     private void Start()

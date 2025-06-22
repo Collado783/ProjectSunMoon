@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2069797614554288998}
   - component: {fileID: 5040073941196584363}
   - component: {fileID: 2123710969219559861}
+  - component: {fileID: 8189782136201851233}
   m_Layer: 8
   m_Name: BLOQUE GRAVEDAD INVERTIDA_0
   m_TagString: Untagged
@@ -147,3 +148,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247141e35073ddb44b0e1d55597c4b2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 8300000, guid: 40bdca05a6c0798449a342dac2ee3028, type: 3}
+--- !u!95 &8189782136201851233
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334797304776053094}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e9fb730b7648c7e40a9356b9a667b806, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

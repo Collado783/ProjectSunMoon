@@ -32,7 +32,7 @@ public class PowerUpSpawner : MonoBehaviour
         }
     }
 
-    // Método llamado por el power-up cuando se recoge
+    
     public void NotifyPowerUpCollected()
     {
         currentPowerUp = null;
